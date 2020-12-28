@@ -1,5 +1,4 @@
 import "./index.css"
-import picture from "./Big-Sur-Road.png"
 import {useSelector} from 'react-redux'
 
 const Home = () => {
