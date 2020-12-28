@@ -5,10 +5,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">AptBnb/h3>
+  <h3 align="center">AptBnb</h3>
 
   <p align="center">
-    AptBnb, A Clone of the popular Air Bnb website
+    A Clone of the popular Air Bnb website
     <br />
     <a href="https://github.com/nikhilmenon2/airbnbclone"><strong>Explore the docs »</strong></a>
     <br />
