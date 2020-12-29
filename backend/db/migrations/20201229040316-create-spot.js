@@ -8,6 +8,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      user_id: {
+        type: Sequelize.INTEGER,
+        references: { model: 'Users'}
+      },
       name: {
         type: Sequelize.STRING
       },
@@ -21,6 +25,9 @@ module.exports = {
         type: Sequelize.NUMERIC
       },
       street: {
+        type: Sequelize.STRING
+      },
+      city: {
         type: Sequelize.STRING
       },
       state: {
