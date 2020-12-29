@@ -1,3 +1,39 @@
+
 .profile-dropdown {
   position: absolute;
+}
+
+#top-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+}
+
+#nav-bar-logo-picture{
+   height: 100px;
+   margin-left: 20px;
+}
+
+#nav-bar-center {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: fit-content;
+  padding: 20px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+}
+
+nav-bar-menu{
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15vw;
+  margin-right: 80px;
 }
