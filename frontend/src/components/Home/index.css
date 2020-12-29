@@ -7,3 +7,11 @@
 #home-page-container img {
     width: auto;
 }
+
+.title-picture {
+  height: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}

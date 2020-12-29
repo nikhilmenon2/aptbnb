@@ -20,6 +20,7 @@ function LoginForm() {
   };
 
   return (
+    <div id="login-form-modal">
     <>
       <h1>Log In</h1>
       <form onSubmit={handleSubmit}>
@@ -49,6 +50,7 @@ function LoginForm() {
         <button type="submit">Log In</button>
       </form>
     </>
+    </div>
   );
 }
 

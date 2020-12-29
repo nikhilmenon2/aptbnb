@@ -1,5 +1,6 @@
 import "./index.css"
-import {useSelector} from 'react-redux'
+import picture from "./SF.jpg"
+// import {useSelector} from 'react-redux'
 
 const Home = () => {
 
@@ -12,9 +13,9 @@ const Home = () => {
     return (
         <div>
         <div id="home-page-container"> 
-        {/* <img src={picture} /> */}
+        <h1> Welcome to AptBnB</h1>
+        <img src={picture} />
         <div id="home-page-overlay" >
-            <h1> Welcome to AptBnB</h1>
              </div>
         </div>
         </div>
