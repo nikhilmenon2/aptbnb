@@ -7,6 +7,7 @@ import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import Spots from "./components/Spots";
+import Spot from "./components/Spot";
 
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/spots" >
             <Spots/>
+          </Route>
+           <Route path="/spot/:id" >
+            <Spot/>
           </Route>
           <Route path="/login" >
             <LoginFormPage />

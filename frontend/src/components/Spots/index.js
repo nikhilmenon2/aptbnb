@@ -1,37 +1,66 @@
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {getSpots} from '../../store/spot'
+import { NavLink } from 'react-router-dom';
+import {getSpots, getSpot} from '../../store/spot'
 import MapContainer from "../MapContainer";
 import './Spots.css'
 
 
-
 function Spots() {
+
+    const[search,setSearch] = useState("")
+
     const spots = useSelector(
         (state) => state.spots
     )
     const dispatch = useDispatch()
-  
-useEffect(() => {
-  dispatch (
-      getSpots()
-  )
-},[dispatch])
+       
+    console.log(spots)
+    
+    
+        useEffect(() => {
+        dispatch (
+            getSpots()
+        )
+        },[dispatch])
 
 
-// [{long:1,lat:2}]
+    // useEffect(() => {
+    //     dispatch (
+    //         getSpot()
+    //     )
+    //     },[dispatch])
+
+
+
+const handleChange = (e) => {
+    e.preventDefault();
+    setSearch(e.target.value)
+}
+
+// if(search.length > 0){
+//     var spots = spots.filter((i) =>{
+//         return i.name.match(search)
+//     })
+// }
 
 
     return (
-    <>
+    <div>
+        <input type="text" placeholder="Search Here" onChange={handleChange} value={search}>
+        </input>
         <div>
-            { spots.map(spot => 
+            { spots && spots.map(spot => 
             <>
             <br/>
-            <div className="spot-listing-box" >
+            <NavLink to={`/spot/${spot.id}`}>
+            <div className="spot-listing-box"  >
                 <h1>{spot.name}</h1>
                 <img id="spot-image" src={spot.Images[1].image_url}></img>
+                <div>
+                </div>
             </div>  
+            </NavLink>
             </>
                 )}
         </div>
@@ -39,7 +68,7 @@ useEffect(() => {
             <MapContainer></MapContainer>
         </div>
 
-     </>
+     </div>
     )
 }
 
