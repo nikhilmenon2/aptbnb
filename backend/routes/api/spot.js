@@ -1,9 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const {Spot, Image} = require('../../db/models');
-
-const { handleValidationErrors } = require('../../utils/validation');
-const { setTokenCookie, requireAuth, restoreUser } = require('../../utils/auth');
 const asyncHandler = require('express-async-handler');
 
 router.get('/',
@@ -17,7 +14,6 @@ router.get('/',
 router.get('/:id',
   asyncHandler(async (req, res) => {
     const spot = await Spot.findByPk(req.params.id);
-    const urls = [];
     res.json({ spot });
   })
 );
