@@ -26,7 +26,7 @@ console.log(result)
             { result.map(spot => 
             <div>
                 <h1>{spot.name}</h1>
-                <h2>{spot.Images[1].image_url}</h2>
+                <img src={spot.Images[1].image_url}></img>
             </div>  
                 )}
         </div>
