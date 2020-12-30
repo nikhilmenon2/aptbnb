@@ -1,16 +1,23 @@
 import React from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import {useSelector} from 'react-redux'
 
 
 
 const MapContainer = () => {
   
+  const spots = useSelector(
+        (state) => state.spots
+    )
+
+
+
   const mapStyles = {        
     height: "50vh",
     width: "35%"};
   
   const defaultCenter = {
-    lat: 32.7767, lng: -96.808891
+    lat: 37.7739, lng: -122.431297
   }
   
   return (
@@ -19,8 +26,13 @@ const MapContainer = () => {
         <GoogleMap
           mapContainerStyle={mapStyles}
           zoom={13}
-          center={defaultCenter}
-        />
+          center={defaultCenter}>
+          {spots.map(spot => 
+          <Marker position={{lat: Number.parseFloat(spot.latitude), lng: Number.parseFloat(spot.longitude)}}/>
+            )}
+            {/* {<Marker position={defaultCenter}/>} */}
+           
+       </GoogleMap>
      </LoadScript>
   )
 }

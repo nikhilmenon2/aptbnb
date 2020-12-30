@@ -1,4 +1,15 @@
-#google-map-container{
-    margin-right: 20px;
-    background-color: pink;
+
+
+.spot-listing-box{
+    height:400px;
+    width:400px;
+    border:5px solid green;
+
+
+}
+
+.spot-listing-box img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }

@@ -2,6 +2,7 @@ import {useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import {getSpots} from '../../store/spot'
 import MapContainer from "../MapContainer";
+import './Spots.css'
 
 
 
@@ -17,17 +18,21 @@ useEffect(() => {
   )
 },[dispatch])
 
-const result = Object.values(spots)
-console.log(result)
+
+// [{long:1,lat:2}]
+
 
     return (
     <>
         <div>
-            { result.map(spot => 
-            <div>
+            { spots.map(spot => 
+            <>
+            <br/>
+            <div className="spot-listing-box" >
                 <h1>{spot.name}</h1>
-                <img src={spot.Images[1].image_url}></img>
+                <img id="spot-image" src={spot.Images[1].image_url}></img>
             </div>  
+            </>
                 )}
         </div>
         <div id='google-map-container'>
