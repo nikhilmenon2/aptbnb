@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import { NavLink } from 'react-router-dom';
-import {getSpots, getSpot} from '../../store/spot'
+import {getSpots} from '../../store/spot'
 import MapContainer from "../MapContainer";
 import './Spots.css'
 
@@ -23,13 +23,6 @@ function Spots() {
             getSpots()
         )
         },[dispatch])
-
-
-    // useEffect(() => {
-    //     dispatch (
-    //         getSpot()
-    //     )
-    //     },[dispatch])
 
 
 
