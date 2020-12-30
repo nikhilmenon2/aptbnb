@@ -6,11 +6,11 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 const MapContainer = () => {
   
   const mapStyles = {        
-    height: "100vh",
-    width: "100%"};
+    height: "50vh",
+    width: "35%"};
   
   const defaultCenter = {
-    lat: 41.3851, lng: 2.1734
+    lat: 32.7767, lng: -96.808891
   }
   
   return (

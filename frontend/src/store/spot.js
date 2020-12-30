@@ -13,14 +13,15 @@ const {spots} = await res.json()
 dispatch(setSpots(spots))
 }
 
-const initialState = [];
+const initialState = {};
 
 function reducer(state = initialState, action) {
   let newState;
 
   switch (action.type) {
     case SET_SPOTS:
-        return action.payload;
+        newState = Object.assign({}, state,  action.payload );
+        return newState;
     default:
       return state;
   }
