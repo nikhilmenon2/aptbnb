@@ -1,19 +1,34 @@
 #home-page-picture{
   width: 100%;
   top: 0;
+  display: block;
 }
 
 
 #home-page-container {
     
     top: 100px;
+     display: block;
+     position: fixed;
+     overflow: hidden;
+bottom: 0px;
+
 
 } 
+
+#phantom{
+  display: 'block';
+  padding: '20px';
+  height: '60px';
+  width: '100%';
+}
+
 
 #home-page-container img {
     
     width: 100%;
-
+    height: 100%;
+    margin-top: 0px;
 } 
 
 /* #home-page-overlay {

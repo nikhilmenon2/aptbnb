@@ -1,7 +1,7 @@
 .spot-listing-box {
   height: 250px;
-  margin-right: 100px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  margin-right: 50px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
   /* color: black; */
 }
 
