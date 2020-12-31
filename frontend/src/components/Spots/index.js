@@ -39,10 +39,8 @@ const handleChange = (e) => {
 
 
     return (
-    <div>
-        <input type="text" placeholder="Search Here" onChange={handleChange} value={search}>
-        </input>
-        <div>
+    <div id="main-div">
+        <div id='main-spots-div'>
             { spots && spots.map(spot => 
             <>
             <br/>
@@ -53,14 +51,7 @@ const handleChange = (e) => {
                 <div>
                 </div>
             </div>   */}
-                <div className='searchResult__info'>
-                <div className="searchResult__infoTop">
-                    <p>{spot.city}</p>
-                    <h3>{spot.name}</h3>
-                    <p>{spot.description}</p>
-                </div>
-
-            </div>
+        
             
             </NavLink>
             </>

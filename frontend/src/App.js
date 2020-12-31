@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Switch } from "react-router-dom";
-import SignupFormPage from "./components/SignupFormPage";
-import LoginFormPage from "./components/LoginFormPage";
+// import SignupFormPage from "./components/SignupFormPage";
+// import LoginFormPage from "./components/LoginFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import Spots from "./components/Spots";
 import Spot from "./components/Spot";
+import LoginFormModal from "./components/LoginFormModal";
+import SignUpModal from "./components/LoginFormModal";
+
 
 
 function App() {
@@ -32,10 +35,10 @@ function App() {
             <Spot/>
           </Route>
           <Route path="/login" >
-            <LoginFormPage />
+            <LoginFormModal />
           </Route>
           <Route path="/signup">
-            <SignupFormPage />
+            <SignUpModal />
           </Route>
         </Switch>
       )}
