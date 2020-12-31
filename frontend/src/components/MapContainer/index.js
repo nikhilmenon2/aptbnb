@@ -28,7 +28,7 @@ const MapContainer = () => {
           zoom={13}
           center={defaultCenter}>
           {spots.map(spot => 
-          <Marker position={{lat: Number.parseFloat(spot.latitude), lng: Number.parseFloat(spot.longitude)}} label={(spot.price)}/>
+          <Marker position={{lat: Number.parseFloat(spot.latitude), lng: Number.parseFloat(spot.longitude)}} label={`${spot.price}`}/>
             )}
             {/* {<Marker position={defaultCenter}/>} */}
            

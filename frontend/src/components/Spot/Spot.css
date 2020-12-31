@@ -1,0 +1,44 @@
+#individual-spot-main-container{
+ padding-top: 50px;
+margin-right: 100px;
+  width: 1000px;;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;     
+
+}
+
+#individual-spot-main-photo-container{
+   height: 400px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: center;
+}
+
+.photo-slide {
+  width: 100%;
+  min-width: 100px;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+
+#under-box{
+    position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-bottom: 70px;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+#info-box{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% - 350px);
+}
+

@@ -32,8 +32,8 @@ function Navigation({ isLoaded }){
      <img id="nav-bar-logo-picture" src={picture} />
     </NavLink>
       <div id="nav-bar-center">
-        <NavLink exact to="/">
-        <h2 id="nav-bar-greeting">Welcome to AptBnB</h2>
+        <NavLink exact to="/" style={{ textDecoration: 'none' }}>
+        <h2 id="nav-bar-greeting" >Welcome to AptBnB</h2>
         </NavLink>
       </div>
       <div id="nav-bar-menu">

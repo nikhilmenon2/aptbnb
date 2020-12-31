@@ -44,9 +44,9 @@ const handleChange = (e) => {
             { spots && spots.map(spot => 
             <>
             <br/>
-            <NavLink to={`/spot/${spot.id}`}>
+            <NavLink to={`/spot/${spot.id}`} style={{ textDecoration: 'none' }}>
             <div className="spot-listing-box"  >
-                <h1>{spot.name}</h1>
+                <p>{spot.name}</p>
                 <img className="spot-image" src={spot.Images[1].image_url}></img>
                 <div>
                 </div>
