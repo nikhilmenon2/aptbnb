@@ -10,20 +10,20 @@
 .spot-listing-box img{
     object-fit: contain;
     height: 50%;
-    width: 50%;
+    width: 75%;
 }
 #main-spots-div{
-    width: 100%;
+    width: 50%;
     background: lightblue;
     display: inline-block;
     height: 100%;
 }
 
 #google-map-container{
-    width: 100%;
+    position: relative;
+    width: 50%;
     background: orange;
-    display: inline-block;
-    height: 100%;
+    height: 830px;
 }
 
 .spot-image {
@@ -32,6 +32,9 @@
 }
 
 #main-div{
-    display: flex;
+    display:flex;
+    top:100px;
+    width: 100%;
+    flex-direction: row;
 }
 

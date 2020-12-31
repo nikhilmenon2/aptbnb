@@ -45,12 +45,12 @@ const handleChange = (e) => {
             <>
             <br/>
             <NavLink to={`/spot/${spot.id}`}>
-            {/* <div className="spot-listing-box"  >
+            <div className="spot-listing-box"  >
                 <h1>{spot.name}</h1>
                 <img className="spot-image" src={spot.Images[1].image_url}></img>
                 <div>
                 </div>
-            </div>   */}
+            </div>  
         
             
             </NavLink>

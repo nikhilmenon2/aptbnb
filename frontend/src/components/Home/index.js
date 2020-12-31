@@ -10,10 +10,10 @@ const Home = () => {
     });
     
     return (
-        <div id="home-page-container" >
+        <div id="home-page-container">
             <div>
                 <img id="home-page-picture" src={picture} />
-                <div id="home-page-overlay">
+                <div>
                     <div>
                      {loggedInUser && <h3> Welcome {loggedInUser.username}, Let's Get You Booked For Your Next Home!</h3>}
                      </div>
