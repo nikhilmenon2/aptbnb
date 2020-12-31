@@ -18,8 +18,17 @@ export default function Spot() {
     
     return (
         <div>
-           {spots && spots.name}
-            <h1>Hello</h1>
+          <h1> {spots && spots.name}</h1>
+          <h6>{spots && spots.address}</h6>
+            <h6>{spots && spots.city}</h6>
+            <h6>{spots && spots.state}</h6>
+          <h4> {spots && spots.description}</h4>
+         <img src={spots.Images[0].image_url}></img>
+         <img src={spots.Images[1].image_url}></img>
+        <img src={spots.Images[2].image_url}></img>
+
+
+
         </div>
     )
 }

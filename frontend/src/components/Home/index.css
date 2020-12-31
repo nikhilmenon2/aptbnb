@@ -1,16 +1,13 @@
 #home-page-picture{
-   height: 50vh;
-  position: relative;
+  width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 
 
-home-page-container {
-    background-color: black;
-    color: white;
-    padding-top: 25vh;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 40px;
-    width: 300px;
-}
+#home-page-container {
+    
+    width: 100%;
+    height: 100%;
+} 

@@ -47,12 +47,21 @@ const handleChange = (e) => {
             <>
             <br/>
             <NavLink to={`/spot/${spot.id}`}>
-            <div className="spot-listing-box"  >
+            {/* <div className="spot-listing-box"  >
                 <h1>{spot.name}</h1>
-                <img id="spot-image" src={spot.Images[1].image_url}></img>
+                <img className="spot-image" src={spot.Images[1].image_url}></img>
                 <div>
                 </div>
-            </div>  
+            </div>   */}
+                <div className='searchResult__info'>
+                <div className="searchResult__infoTop">
+                    <p>{spot.city}</p>
+                    <h3>{spot.name}</h3>
+                    <p>{spot.description}</p>
+                </div>
+
+            </div>
+            
             </NavLink>
             </>
                 )}

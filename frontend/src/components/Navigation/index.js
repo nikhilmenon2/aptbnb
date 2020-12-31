@@ -34,6 +34,7 @@ function Navigation({ isLoaded }){
       <div id="nav-bar-menu">
         <NavLink className="nav-link" exact to="/">Home</NavLink>
         {isLoaded && sessionLinks}
+         <NavLink className="nav-link" exact to="/spots">Spots</NavLink>
       </div>
     </div>
   );

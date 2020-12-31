@@ -10,8 +10,8 @@ const Home = () => {
     });
     
     return (
-        <div>
-            <div id="home-page-container">
+        <div id="home-page-container" >
+            <div>
                 <img id="home-page-picture" src={picture} />
                 <div id="home-page-overlay">
                     <div>

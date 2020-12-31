@@ -10,8 +10,8 @@
   position: sticky;
   top: 0;
   background-color: white;
-  z-index: 100;
   width: 100%;
+  z-index: 1
 }
 
 #nav-bar-logo-picture{
@@ -35,7 +35,10 @@
   align-items: center;
   justify-content: space-between;
   width: 200px;
-  margin-right: 100px;
+  margin-right: 150px;
+    position: sticky;
+    
+
 }
 
 .nav-link {
