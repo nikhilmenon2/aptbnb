@@ -3,6 +3,7 @@
 .spot-listing-box{
     height:250px;
     border:5px solid grey;
+    margin-right: 100px;
 
 
 }
@@ -11,10 +12,11 @@
     object-fit: contain;
     height: 50%;
     width: 75%;
+    
 }
 #main-spots-div{
     width: 50%;
-    background: lightblue;
+]]
     display: inline-block;
     height: 100%;
 }
@@ -22,7 +24,6 @@
 #google-map-container{
     position: relative;
     width: 50%;
-    background: orange;
     height: 830px;
 }
 
