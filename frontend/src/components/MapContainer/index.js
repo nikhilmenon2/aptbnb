@@ -1,17 +1,16 @@
-import React from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import React, {useState} from 'react';
+import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
 import {useSelector} from 'react-redux'
-import { NavLink } from 'react-router-dom';
-
-
 
 
 const MapContainer = () => {
+
+  const[selectedApt,setSelectedApt] = useState(null)
   
   const spots = useSelector(
         (state) => state.spots
     )
-
+    
 
 
   const mapStyles = {        
@@ -30,11 +29,16 @@ const MapContainer = () => {
           zoom={13}
           center={defaultCenter}>
           {spots.map(spot => 
-          <Marker position={{lat: Number.parseFloat(spot.latitude), lng: Number.parseFloat(spot.longitude)}} label={`${spot.price}`}>$
+          <Marker key={spot.id}
+           position={{lat: Number.parseFloat(spot.latitude), lng: Number.parseFloat(spot.longitude)}} 
+           onClick={() => {
+             setSelectedApt(spot)
+           }}
+           label={`${spot.price}` }>$
             </Marker>
             )}
             {/* {<Marker position={defaultCenter}/>} */}
-           
+          
        </GoogleMap>
      </LoadScript>
   )
