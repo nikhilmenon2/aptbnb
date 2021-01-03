@@ -1,6 +1,8 @@
 import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import {useSelector} from 'react-redux'
+import { NavLink } from 'react-router-dom';
+
 
 
 
@@ -28,7 +30,8 @@ const MapContainer = () => {
           zoom={13}
           center={defaultCenter}>
           {spots.map(spot => 
-          <Marker position={{lat: Number.parseFloat(spot.latitude), lng: Number.parseFloat(spot.longitude)}} label={`${spot.price}`}/>
+          <Marker position={{lat: Number.parseFloat(spot.latitude), lng: Number.parseFloat(spot.longitude)}} label={`${spot.price}`}>$
+            </Marker>
             )}
             {/* {<Marker position={defaultCenter}/>} */}
            

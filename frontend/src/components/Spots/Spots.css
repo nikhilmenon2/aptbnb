@@ -1,20 +1,62 @@
-.spot-listing-box {
-  height: 250px;
-  margin-right: 50px;
+ .spot-listing-box {
+  padding: 24px;
+  display:flex;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
-  /* color: black; */
+   /* width: 300px;
+   height: 200px;
+   border-radius:10px;
+   overflow: hidden; */
+}
+.picture-box {
+    width: 300px;
+   height: 200px;
+   border-radius:10px;
+   overflow: hidden;
+}
+
+.spot-props{
+  font-size: 20px;
+  line-height: 18px;
+  font-family: sans-serif;
+  color: black
+}
+
+.spot-props-others{
+  font-size: 14px;
+  line-height: 18px;
+  font-family: sans-serif;
+  color: grey;
+  text-decoration: italic;
 }
 
 .spot-listing-box img {
-  object-fit: contain;
-  height: 50%;
-  width: 75%;
+  /* object-fit: contain;
+  display: flex;
+  height: 130%;
+  width: 130%;
+   margin-right:100px; */
+   object-fit: cover;
+   height:100%;
+   width: 100%;
 }
+.spot-details{
+  margin-right: 30px;
+  height: 150px;
+  width: 300px;
+}
+
+.spot-props-amenities{
+  font-size: 18px;
+  line-height: 18px;
+  font-family: sans-serif;
+  color: black
+}
+
 #main-spots-div {
   width: 50%;
-
   display: inline-block;
   height: 100%;
+  padding: 50px;
 }
 
 #google-map-container {
@@ -24,16 +66,12 @@
   height: 830px;
 }
 
-.spot-image {
-  width: 300px;
-  height: 200px;
-}
-
 #main-div {
   display: flex;
   top: 100px;
   width: 100%;
   flex-direction: row;
-}
+} 
+
 
 

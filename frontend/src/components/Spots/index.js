@@ -46,10 +46,19 @@ const handleChange = (e) => {
             <br/>
                 <NavLink to={`/spot/${spot.id}`} style={{ textDecoration: 'none' }}>
                     <div className="spot-listing-box"  >
-                            <div>
-                                <img className="spot-image" src={spot.Images[1].image_url}></img>
-    
-                            </div>
+                        <div className='picture-box'>
+                             <img className="spot-image" src={spot.Images[1].image_url}></img>
+                        </div>
+                             <div className='spot-details'>
+                                <ul>
+                                     <h3 className='spot-props'>{spot.name}</h3>
+                                      <h3 className='spot-props-others'>Entire Apartment</h3>
+                                     <h3 className='spot-props-others'>${spot.price} per night</h3>
+                                      <h3 className='spot-props-amenities'>Kitchen | Washer & Dryer | Wifi </h3>
+                                </ul> 
+                          
+                             </div>
+                            
                     </div>  
             
                 

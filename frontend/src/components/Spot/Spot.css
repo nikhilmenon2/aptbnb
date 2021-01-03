@@ -49,73 +49,10 @@ height: 300px;
   width: calc(100% - 350px);
 }
 
-
-
-.spotshow-main-container {
-  margin-top: 66px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.spotshow-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}
-#spotshow-photo-container{
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.spotshow-photo-large{
-   
-  width: 50%;
-  height: 100%;
-  box-sizing: border-box;
-  border: 1px solid darkgray;
-  overflow: hidden;
-}
-
-
-#outer{
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1000px;
-  margin-bottom: 70px;
-  margin-top: 20px;
-  padding: 0 10px;
-}
-
 .lastline {
   border-top: 1px solid lightgray;
 }
 
-.check-in-box{
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #484848;
-  position: sticky;
-  width: 360px;
-  height: 320px;
-  border: 1px solid lightgray;
-  top: 90px;
-  margin-top: 50px;
-  margin-left: 80px;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  
-}
 
 .single-spot-info-column{
   position: relative;

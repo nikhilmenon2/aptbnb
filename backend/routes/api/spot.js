@@ -18,5 +18,12 @@ router.get('/:id',
   })
 );
 
+router.post('/create', asyncHandler(async(req,res, next)=>{
+    const {id} = req.params
+    const spot = await spot.create({})
+    return res.json({spot})
+}))
+
+
 
 module.exports = router;
