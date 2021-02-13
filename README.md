@@ -8,7 +8,7 @@
   <h3 align="center">AptBnb</h3>
 
   <p align="center">
-    A Clone of the popular Air Bnb website
+    A clone of the popular Air Bnb website
     <br />
     <a href="https://github.com/nikhilmenon2/airbnbclone"><strong>Explore the docs »</strong></a>
     <br />
