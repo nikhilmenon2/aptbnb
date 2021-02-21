@@ -67,7 +67,7 @@ As more and more people are learning to be more experimental in their culinary p
 
 ## Live Link
 
-Live Link For This Project Can Be Found [Here](http://airbnbclone.herokuapp.com/)
+Live Link For This Project Can Be Found [Here](http://apt-bnb.herokuapp.com/)
 
 <br><br/>
 
@@ -78,8 +78,6 @@ Live Link For This Project Can Be Found [Here](http://airbnbclone.herokuapp.com/
 <br><br/>
 
 ## Built With
-<br>
-<br>
 <br>
 <br>
 <p align="left">
