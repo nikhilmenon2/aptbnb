@@ -10,7 +10,7 @@ More information can be found on this project at it's [Wiki](https://github.com/
 <br />
 <p align="center">
   <a href="https://github.com/nikhilmenon2/airbnbclone">
-    <img src="images/logo.png" alt="Logo" width="195" height="75">
+    <img src="images/logo.png" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">AptBnB</h3>
