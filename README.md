@@ -59,9 +59,9 @@ More information can be found on this project at it's [Wiki](https://github.com/
 
 ## About The Project
 
-A full stack application that draws inspiration from New York Times Cooking and Netflix.
+A full stack application that draws inspiration from Airbnb.
 
-As more and more people are learning to be more experimental in their culinary prowess, there should be a website that is dedicated to those who are just starting out to learn. Users can look at recipes, read and leave reviews, as well as favoriting what they love to make, for easier access to them!
+As more and more people are looking towards freeing themselves from pricey short term leases, AptBnb steps in to fill that void. With this service users, are able to book their vacation or corporate stays at reasoanable prices at top tier destination apartments. 
 
 <br><br/>
 
