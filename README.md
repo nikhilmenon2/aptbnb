@@ -137,52 +137,34 @@ This is an example of how to list things you need to use the software and how to
    ```bash
    git clone https://github.com/nikhilmenon2/airbnbclone
    ```
-2. Install NPM packages in /reactapp folder
+2. Install NPM packages in /frontend folder
    ```bash
    npm install
    ```
-3. Install Pipenv Dependencies in root folder
+3. Install NPM packages in /backend folder
    ```bash
-     pipenv install --dev -r dev-requirements.txt && pipenv install -r requirements.txt
+   npm install
    ```
 4. Create a **.env** file based on the example with proper settings for your
    development environment
 
 5. Setup your PostgreSQL user, password and database and make sure it matches your **.env** file
 
-6. Get into your pipenv, migrate your database, seed your database, and run your flask app
+6. Get into your dotenv sequelize command interface, migrate your database, seed your database, and run your express app from your frontend and backend folders
 
    ```bash
-   pipenv shell
+   npx dotenv sequelize-cli db:migrate
    ```
 
    ```bash
-   flask db upgrade
+   npx dotenv sequelize-cli db:seed:all
+
    ```
 
    ```bash
-   flask seed all
+    npm start
    ```
 
-   ```bash
-   flask run
-   ```
-
-7. To run the React App in development, checkout the [README](./react-app/README.md) inside the `react-app` directory.
-
----
-
-_IMPORTANT!_
-If you add any python dependencies to your pipfiles, you'll need to regenerate your requirements.txt before deployment.
-You can do this by running:
-
-```bash
-pipenv lock -r > requirements.txt
-```
-
-_ALSO IMPORTANT!_
-psycopg2-binary MUST remain a dev dependency because you can't install it on apline-linux.
-There is a layer in the Dockerfile that will install psycopg2 (not binary) for us.
 
 ---
 
