@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import ProfileButton from './ProfileButton';
 import LoginFormModal from '../LoginFormModal';
 import SignUpModal from '../SignUpModal';
+import SearchBar from '../SearchBar/SearchBar'
 
 import './Navigation.css';
 import picture from "./logo.png";
@@ -29,17 +30,15 @@ function Navigation({ isLoaded }){
   return (
     <div id="top-nav-bar">
       <NavLink exact to="/">
-     <img id="nav-bar-logo-picture" src={picture} />
-    </NavLink>
+        <img id="nav-bar-logo-picture" src={picture} />
+      </NavLink>
       <div id="nav-bar-center">
-        <NavLink exact to="/" style={{ textDecoration: 'none' }}>
-        <h2 id="nav-bar-greeting" >Welcome to AptBnB</h2>
-        </NavLink>
       </div>
       <div id="nav-bar-menu">
-        <NavLink className="nav-link" exact to="/">Home</NavLink>
+        <NavLink className="nav-link" exact to="/">
+          Home
+        </NavLink>
         {isLoaded && sessionLinks}
-         <NavLink className="nav-link" exact to="/spots">Spots</NavLink>
       </div>
     </div>
   );

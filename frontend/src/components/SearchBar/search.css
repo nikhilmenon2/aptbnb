@@ -1,0 +1,162 @@
+#search-parent-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  height:500px;
+}
+
+#google-map-container {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+#results-wrapper{
+  margin-top: 30px;
+}
+
+#search-bars {
+  height: 66px;
+  width: 600px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+#searchp {
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  color: #ff8b88;
+}
+
+#search-location-bar {
+  width: 100%;
+  padding: 12px 24px;
+  outline-width: 0;
+  background-color: white;
+  transition: transform 250ms ease-in-out;
+  font-size: 12px;
+  line-height: 18px;
+  color: #575756;
+  border-radius: 50px;
+  border: 1px solid #575756;
+  margin-right: 20px;
+}
+
+#search-location-bar::placeholder {
+  color: color(#575756 a(0.8));
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+#search-location-bar::focus {
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
+}
+
+#search-location-bar::hover {
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
+}
+
+
+#search-bars i {
+   display:inline-block;
+    font-size: 35px;
+    line-height: 30px;
+    color:#ff8b88;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding-top: 10px;
+     margin-top: 10px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+ .spot-listing-box {
+  padding: 24px;
+  display:flex;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+   /* width: 300px;
+   height: 200px;
+   border-radius:10px;
+   overflow: hidden; */
+}
+.picture-box {
+    width: 300px;
+   height: 200px;
+   border-radius:10px;
+   overflow: hidden;
+}
+
+.spot-props{
+  font-size: 20px;
+  line-height: 18px;
+  font-family: sans-serif;
+  color: black;
+    text-transform: capitalize;	
+}
+
+.spot-props-others{
+  font-size: 14px;
+  line-height: 18px;
+  font-family: sans-serif;
+  color: grey;
+  text-decoration: italic;
+}
+
+.spot-listing-box img {
+  /* object-fit: contain;
+  display: flex;
+  height: 130%;
+  width: 130%;
+   margin-right:100px; */
+   object-fit: cover;
+   height:100%;
+   width: 100%;
+}
+.spot-details{
+  margin-right: 30px;
+  height: 150px;
+  width: 300px;
+}
+
+.spot-props-amenities{
+  font-size: 18px;
+  line-height: 18px;
+  font-family: sans-serif;
+  color: black
+}
+
+#main-spots-div {
+  width: 50%;
+  display: inline-block;
+  height: 830px;
+  overflow: scroll;
+}
+
+#google-map-container {
+  position: relative;
+  width: 50%;
+  height: 830px;
+}
+
+#main-div {
+  display: flex;
+  top: 100px;
+  width: 100%;
+  flex-direction: row;
+} 
+
+
+

@@ -1,56 +1,43 @@
-.profile-dropdown {
-  position: absolute;
-}
-
 #top-nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  top: 0;
+  height: 130px;
   background-color: white;
   width: 100%;
-  z-index: 1;
-}
-
-#nav-bar-greeting {
-  color: black;
-  text-decoration: none;
+  z-index: 100;
+  border-bottom: 2px solid rgb(197, 197, 197);
 }
 
 #nav-bar-logo-picture {
-  height: 100px;
+  height: 120px;
   margin-left: 20px;
 }
 
-#nav-bar-center {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  max-width: fit-content;
-  padding: 20px;
-  height: 30px;
-  border: 3px solid gray;
-  border-radius: 999px;
+#logout{
+  border: none;
+  height: 58px;
+  width: 100%;
 }
 
 #nav-bar-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 200px;
-  margin-right: 150px;
+  /* width: 200px; */
   position: sticky;
 }
 
 .nav-link {
   margin-right: 20px;
-  padding: 5px;
-  color: black;
-  background-color: white;
-  border-radius: 10px;
-  border: 3px solid gray;
+  color: #fff;
+  text-transform: uppercase;
   text-decoration: none;
+  background: #ff8b88;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
 }
-
-

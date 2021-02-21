@@ -1,8 +1,7 @@
 import "./index.css";
 import picture from "./SF.jpg";
-import Footer from '../Footer/index.js';
-
-
+import Footer from "../Footer"
+import SearchBar from "../SearchBar/SearchBar.js";
 import {useSelector} from 'react-redux';
 
 const Home = () => {
@@ -12,16 +11,16 @@ const Home = () => {
     });
     
     return (
-        <div id="home-page-container">
-            <div>
-                <img id="home-page-picture" src={picture} />
-                    {/* <div id-logged>
-                     {loggedInUser && <h3> Welcome {loggedInUser.username}, Let's Get You Booked For Your Next Home!</h3>}
-                     </div>
-                */}
-            </div>
-              <Footer/>
+      <div id="home-page-container">
+        <div id="home-image-container">
+          <img id="home-page-picture" src={picture} />
+          <div id="home-page-overlay">
+            <p id="searchp"> Search For Your Dream Apartment Today</p>
+            <SearchBar />
+          </div>
         </div>
+        <Footer />
+      </div>
     );
 };
 

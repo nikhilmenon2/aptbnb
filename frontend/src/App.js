@@ -6,10 +6,11 @@ import { Route, Switch } from "react-router-dom";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
-import Spots from "./components/Spots";
-import Spot from "./components/Spot";
+import Spots from "./components/Spots/index";
+import Spot from "./components/Spot/index";
 import LoginFormModal from "./components/LoginFormModal";
 import SignUpModal from "./components/LoginFormModal";
+import SearchResults from "./components/SearchBar/SearchResults";
 
 
 
@@ -25,17 +26,21 @@ function App() {
       <Navigation isLoaded={isLoaded} />
       {isLoaded && (
         <Switch>
-          <Route exact path="/" >
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/spots" >
-            <Spots/>
+          <Route exact path="/spots">
+            <Spots />
           </Route>
-           <Route path="/spot/:id" >
-            <Spot/>
+          <Route exact path="/spots/:id">
+            <Spot />
           </Route>
-          <Route path="/login" >
+          <Route path="/login">
             <LoginFormModal />
+          </Route>
+          <Route path="/search">
+            <SearchResults
+            />
           </Route>
           <Route path="/signup">
             <SignUpModal />

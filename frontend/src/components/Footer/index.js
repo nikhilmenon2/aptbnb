@@ -1,19 +1,37 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import './Footer.css';
+
 
 function Footer() {
     return (
-       <div className="footer-container">
+      <div className="footer-container">
         <div className="footer">
-          <p>2020 AptBnb, a clone of Airbnb.com </p>
-            <div>
-              <a href="https://www.linkedin.com/in/nickmenon/" target="_blank">LinkedIn</a>|
-              <a href="https://github.com/nikhilmenon2/airbnbclone" target="_blank">GitHub</a>
-            </div>
+          <div id="logo-div">
+            <a
+              id="linkedinlogo"
+              href="https://www.linkedin.com/in/nickmenon/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+            <a
+              id="githublogo"
+              href="https://github.com/nikhilmenon2/aptbnb"
+              target="_blank"
+            >
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+            <a
+              id="angellogo"
+              href="https://angel.co/u/nickmenon"
+              target="_blank"
+            >
+              <i class="fab fa-angellist fa-3x"></i>
+            </a>
+          </div>
         </div>
       </div>
-    )
+    );
 }
 
 export default Footer
