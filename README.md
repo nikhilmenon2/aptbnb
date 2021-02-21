@@ -4,12 +4,12 @@ Is a full-stack application that draws inspiration from AirBnb.
 
 For people that want to book stays at apartments with amenities, instead of hotels. 
 
-More information can be found on this project at it's [Wiki](https://github.com/nikhilmenon2/airbnbclone/wiki)
+More information can be found on this project at it's [Wiki](https://github.com/nikhilmenon2/aptbnb.git/wiki)
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/nikhilmenon2/airbnbclone">
+  <a href="https://github.com/nikhilmenon2/aptbnb.git">
     <img src="images/logo.png" alt="Logo" width="200" height="200">
   </a>
 
@@ -18,7 +18,7 @@ More information can be found on this project at it's [Wiki](https://github.com/
   <p align="center">
     A Gateway for Booking Apartments
     <br />
-    <a href="https://github.com/nikhilmenon2/airbnbclone"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/nikhilmenon2/aptbnb.git"><strong>Explore the docs »</strong></a>
     <br />
     <br />
 
@@ -135,7 +135,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```bash
-   git clone https://github.com/nikhilmenon2/airbnbclone
+   git clone https://github.com/nikhilmenon2/aptbnb.git
    ```
 2. Install NPM packages in /frontend folder
    ```bash
@@ -180,4 +180,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Email - nikhilmenon@comcast.net
 
-Project Link: [GitHub Project Link](https://github.com/nikhilmenon2/airbnbclone)
+Project Link: [GitHub Project Link](https://github.com/nikhilmenon2/aptbnb.git)
