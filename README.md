@@ -79,9 +79,7 @@ Live Link For This Project Can Be Found [Here](http://apt-bnb.herokuapp.com/)
 
 ## Built With
 <br>
-<br>
 <p align="left">
-  
   
 **Javascript** 
 <br>
