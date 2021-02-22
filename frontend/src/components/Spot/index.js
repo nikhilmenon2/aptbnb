@@ -33,21 +33,28 @@ let spot = spots.find((x) => x.id === numId);
 
             <br />
             <br />
+            <div className="lastline">
+              <br />
+              <p className="single-spot-name">About The Neighborhood</p>
+              <div className="single-spot-description">
+                <span className="single-spot-description">{spot.overview}</span>
+                <p></p>
+              </div>
+            </div>
+            <div className="lastline">
+              <br />
+              <p className="single-spot-name">Rules For This Property</p>
+              <div className="single-spot-description">
+                <span className="single-spot-description">{spot.rules}</span>
+                <p></p>
+              </div>
+            </div>
 
             <div className="lastline">
               <br />
               <p className="single-spot-name">Policies</p>
               <div className="single-spot-description">
                 <span className="single-spot-occupancy"> Thinks to Know </span>
-                <p>
-                  {" "}
-                  <i class="fas fa-smoking-ban"></i> No smoking, parties, or
-                  events{" "}
-                </p>
-                <p>
-                  {" "}
-                  <i class="fas fa-dog"></i> Pets Are Always Allowed{" "}
-                </p>
                 <p>
                   {" "}
                   <i class="fas fa-check-circle"></i> Check-in: After 3:00 PM

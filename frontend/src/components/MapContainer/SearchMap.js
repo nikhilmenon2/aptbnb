@@ -30,8 +30,6 @@ const SearchMap = ({ center, spots }) => {
   if (!center) {
     return null;
   }
-
-  debugger;
   return (
     <LoadScript googleMapsApiKey="AIzaSyBB_qz7gdLnQ9rBYBbQafFjWqx7gyIIJVI">
       <GoogleMap mapContainerStyle={mapStyles} zoom={12} center={defaultCenter}>

@@ -19,16 +19,5 @@ router.post('/',
 );
 
 
-router.post('/',
-  requireAuth,
-  asyncHandler(async (req, res) => {
-    const data = req.body.booking;
-    if (req.user.id !== data.userId) {
-      return res.status(401).json({ error: "Unauthorized user" });
-    }
-      const booking = await Booking.create(data);
-      res.json({ booking: data });
-    }
-  )
-);
+
 module.exports = router;
