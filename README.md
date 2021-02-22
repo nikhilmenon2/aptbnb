@@ -79,8 +79,8 @@ Live Link For This Project Can Be Found [Here](http://apt-bnb.herokuapp.com/)
 
 ## Built With
 <br>
-<br>
 <p align="left">
+  
 **Javascript** 
 <br>
 <br>
@@ -90,6 +90,8 @@ Live Link For This Project Can Be Found [Here](http://apt-bnb.herokuapp.com/)
   </a>
 <br>
 <br>
+  
+  
 **PostGresSQ**
 <br>
 <br>
@@ -98,6 +100,8 @@ Live Link For This Project Can Be Found [Here](http://apt-bnb.herokuapp.com/)
   </a>
 <br> 
 <br>
+  
+  
 **React**
 <br>
 <br>
@@ -106,7 +110,8 @@ Live Link For This Project Can Be Found [Here](http://apt-bnb.herokuapp.com/)
   </a>
 <br>  
 <br>
-** Redux **
+
+**Redux**
 <br>
 <br>
     <a href="https://redux.js.org/">
