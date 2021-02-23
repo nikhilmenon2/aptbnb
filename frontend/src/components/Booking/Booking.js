@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Select from "react-select";
 import { useParams, useHistory } from "react-router-dom";
 import {fetch} from "../../store/csrf";
-
+import './Booking.css'
 
 function Booking() {
   let { id } = useParams();
@@ -65,6 +65,7 @@ function Booking() {
         onChange={handleSelect}
         minDate ={new Date()}
       />
+      <h2>Select Number Of Guest Below</h2>
       <GuestNum people={people} setPeople={setPeople} />
       <button onClick={makeReservation}>Make Booking</button>
     </div>

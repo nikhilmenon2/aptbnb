@@ -11,7 +11,7 @@ import Spot from "./components/Spot/index";
 import LoginFormModal from "./components/LoginFormModal";
 import SignUpModal from "./components/LoginFormModal";
 import SearchResults from "./components/SearchBar/SearchResults";
-
+import UserProfile from "./components/UserProfile/UserProfile"
 
 
 function App() {
@@ -41,12 +41,14 @@ function App() {
           <Route exact path="/spots/:id">
             <Spot />
           </Route>
+          <Route exact path="/users/:id">
+            <UserProfile />
+          </Route>
           <Route path="/login">
             <LoginFormModal />
           </Route>
           <Route path="/search">
-            <SearchResults
-            />
+            <SearchResults />
           </Route>
           <Route path="/signup">
             <SignUpModal />

@@ -4,7 +4,7 @@ const asyncHandler = require('express-async-handler');
 
 const { handleValidationErrors } = require('../../utils/validation');
 const { setTokenCookie, requireAuth } = require('../../utils/auth');
-const { User } = require('../../db/models');
+const { User, Booking, Review } = require('../../db/models');
 
 const router = express.Router();
 
@@ -48,4 +48,23 @@ router.post(
   })
 );
 
-module.exports = router;
+
+router.get(
+  "/:id",
+  asyncHandler(async (req, res) => {
+    const id = Number(req.params.id);
+    const user = await User.findByPk(id, {
+    include: [Booking]
+    });
+    console.log(user)
+
+   res.json(user)
+
+  })
+)
+ 
+
+
+
+
+module.exports = router

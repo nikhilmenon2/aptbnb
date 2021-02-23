@@ -29,10 +29,17 @@ function Navigation({ isLoaded }) {
   if (sessionUser) {
     sessionLinks = (
       <>
+        <NavLink
+          to={`/users/${sessionUser.id}`}
+          exact={true}
+          className="nav-link"
+          activeClassName="active"
+        >
+          Profile
+        </NavLink>
         <div className="nav-link" onClick={logout}>
           Log Out
         </div>
-        <ProfileButton user={sessionUser} />
       </>
     );
   } else {

@@ -23,6 +23,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "react-select": "^4.1.0",
+    "react-stars": "^2.2.5",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.2.1",

@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import "./Spot.css";
 import Booking from "../Booking/Booking"
+import Review from "../Review/Review"
 
 export default function Spot() {
   let { id } = useParams();
@@ -23,7 +24,8 @@ let spot = spots.find((x) => x.id === numId);
         <div id="individual-spot-main-photo-container">
           <img className="photo-slide" src={spot.imageURL}></img>
         </div>
-        <Booking></Booking>
+        <p className="single-spot-name">Booking</p>
+        <Booking id="booking"></Booking>
         <div id="under-box">
           <div className="single-spot-info-column">
             <p className="single-spot-name">{spot.name}</p>
@@ -76,6 +78,8 @@ let spot = spots.find((x) => x.id === numId);
             <div className="lastline">
               <br />
             </div>
+            <p className="single-spot-name">Reviews</p>
+            <Review></Review>
           </div>
         </div>
       </div>
