@@ -11,7 +11,7 @@ export const clearInfo = () => ({
 });
 
 export const getBooking = (spotId, userId) => async (dispatch) => {
-  let res = await fetch(`/api/spots/${spotId}/booking/user/${userId}`, {
+  let res = await fetch(`/api/bookings`, {
     headers: {
       "Content-Type": "application/json",
     },

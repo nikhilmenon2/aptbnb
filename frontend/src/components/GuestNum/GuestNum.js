@@ -1,18 +1,17 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import Select from "react-select";
 
 const options = [
   { value: "1", label: "1 Guest" },
-  { value: "2", label: "2 Guest" },
-  { value: "3", label: "3 Guest" },
-  { value: "4", label: "4 Guest" },
-  { value: "5", label: "5 Guest" },
-  { value: "6", label: "6 Guest" },
-  { value: "7", label: "7 Guest" },
+  { value: "2", label: "2 Guests" },
+  { value: "3", label: "3 Guests" },
+  { value: "4", label: "4 Guests" },
+  { value: "5", label: "5 Guests" },
+  { value: "6", label: "6 Guests" },
+  { value: "7", label: "7 Guests" },
 ];
 
-function GuestNum() {
-   const[guest, setGuest] = useState({})
+function GuestNum({people, setPeople}) {
 
   const customStyles = {
     option: (provided, state) => ({
@@ -34,19 +33,15 @@ function GuestNum() {
     },
   };
 
-  if (!guest || guest.label === "defaulted") {
-    guest = "";
-  }
-
   return (
     <div id="guestdropdown">
       <Select
         styles={customStyles}
         id="select-guest-drop"
-        value={guest}
+        value={people}
         options={options}
         placeholder="Select Number Of Guests"
-        onChange={setGuest}
+        onChange={setPeople}
       />
     </div>
   );

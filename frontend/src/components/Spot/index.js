@@ -2,14 +2,19 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import "./Spot.css";
+import Booking from "../Booking/Booking"
 
 export default function Spot() {
   let { id } = useParams();
   const numId = parseInt(id);
   const spots = useSelector((state) =>
   state.search.searchResults)
-
+  const user = useSelector((state) => state.session.user);
 let spot = spots.find((x) => x.id === numId);
+
+
+
+
 
 
   return (
@@ -18,6 +23,7 @@ let spot = spots.find((x) => x.id === numId);
         <div id="individual-spot-main-photo-container">
           <img className="photo-slide" src={spot.imageURL}></img>
         </div>
+        <Booking></Booking>
         <div id="under-box">
           <div className="single-spot-info-column">
             <p className="single-spot-name">{spot.name}</p>

@@ -5,19 +5,14 @@ const { handleValidationErrors } = require('../../utils/validation');
 const { setTokenCookie, requireAuth, restoreUser } = require('../../utils/auth');
 const asyncHandler = require('express-async-handler');
 
-router.post('/',
-  requireAuth,
+router.post(
+  "/",
   asyncHandler(async (req, res) => {
-    const data = req.body.booking;
-    if (req.user.id !== data.userId) {
-      return res.status(401).json({ error: "Unauthorized user" });
-    }
-      const booking = await Booking.create(data);
-      res.json({ booking: data });
-    }
-  )
+    const {guest_num, startDate, endDate, spotId, userId} = req.body
+    const booking = await Booking.create(req.body);
+    res.json(booking);
+  })
 );
-
 
 
 module.exports = router;

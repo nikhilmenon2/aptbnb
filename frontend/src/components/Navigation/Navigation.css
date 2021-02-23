@@ -41,3 +41,18 @@
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
 }
+
+
+#profilebutton{
+    margin-right: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ff8b88;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  
+}

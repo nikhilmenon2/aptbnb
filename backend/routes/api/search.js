@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { Spot, Review, User } = require("../../db/models");
+const { Spot } = require("../../db/models");
 const asyncHandler = require("express-async-handler");
 const {Op} = require("sequelize")
 
@@ -36,7 +36,6 @@ router.get(
               },
             },
           ],
-          
         },
       });
 
