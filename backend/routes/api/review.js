@@ -3,7 +3,7 @@ const router = express.Router();
 const asyncHandler = require("express-async-handler");
 const { handleValidationErrors } = require("../../utils/validation");
 const { setTokenCookie, requireAuth } = require("../../utils/auth");
-const { User, Booking, Review } = require("../../db/models");
+const { Spot, Review, User } = require("../../db/models");
 
 
 
@@ -15,6 +15,23 @@ router.post(
     res.json(reviews);
   })
 );
+
+
+
+router.get(
+  "/:spotId/",
+  asyncHandler(async (req, res) => {
+        const id = Number(req.params.spotId);
+        const spot = await Review.findAll({where:
+           {spotId: id},
+            include: { model: User
+   }})
+
+        console.log(spot);
+
+        res.json(spot);
+          }))
+
 
 
 

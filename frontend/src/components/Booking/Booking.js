@@ -67,7 +67,8 @@ function Booking() {
       />
       <h2>Select Number Of Guest Below</h2>
       <GuestNum people={people} setPeople={setPeople} />
-      <button onClick={makeReservation}>Make Booking</button>
+      <br></br>
+      <button className="nav-link" onClick={makeReservation}>Make Booking</button>
     </div>
   );
 }

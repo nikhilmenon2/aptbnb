@@ -40,7 +40,7 @@ function SearchResults() {
           <div id="main-spots-div">
             <h1>Available Spots At This Location:</h1>
             {results &&
-              results.map((spot) => (
+              results.map((spot, i) => (
                 <>
                   <br />
                   <NavLink
@@ -53,7 +53,9 @@ function SearchResults() {
                       </div>
                       <div className="spot-details">
                         <ul>
-                          <h3 className="spot-props">{spot.name}</h3>
+                          <h3 className="spot-props">
+                            {i + 1}.  {spot.name}
+                          </h3>
                           <h3 className="spot-props-others">
                             Entire Apartment
                           </h3>

@@ -50,7 +50,7 @@ router.post(
 
 
 router.get(
-  "/:id",
+  "/:id", requireAuth,
   asyncHandler(async (req, res) => {
     const id = Number(req.params.id);
     const user = await User.findByPk(id, {
