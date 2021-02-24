@@ -9,6 +9,7 @@ import { useParams, useHistory } from "react-router-dom";
 import {fetch} from "../../store/csrf";
 import './Booking.css'
 
+
 function Booking() {
   let { id } = useParams();
   const user = useSelector((state) => state.session.user)
@@ -45,8 +46,8 @@ function Booking() {
             userId: user.id,
             spotId: id,
           }),
-  
         });
+        return <h1>There are no reviews for this business yet!</h1>;
       }
       else{
         history.push('/')

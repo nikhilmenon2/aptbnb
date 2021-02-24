@@ -14,6 +14,9 @@ export default function Spot() {
   const numId = parseInt(id);
   const spots = useSelector((state) => state.search.searchResults);
   const user = useSelector((state) => state.session.user);
+  let userId = user.id;
+  console.log(userId);
+
   let spot = spots.find((x) => x.id === numId);
 
   useEffect(() => {
@@ -24,40 +27,27 @@ export default function Spot() {
     })();
   }, [id]);
 
-    const reviewData = Object.keys(review).map((key) => {
-      return review[key];
-    });
+  const reviewData = Object.keys(review).map((key) => {
+    return review[key];
+  });
 
-    const authorData = Object.keys(reviewData).map((key) => {
-      return reviewData[key];
-    });
-
-    const author = reviewData.User
-    console.log(reviewData)
-    console.log(authorData);
-        // const reviewauthor = 
-
-
-    // const reviews = review.Reviews
-    // console.log(reviews)
-
-      const reviewcomp = reviewData.map((reviewmap) => {
-        return (
-          <div className="reviewbox" key={reviewmap.id}>
-            <NavLink to={`/users/${reviewmap.userId}`}>
-              <ReactStars
-                count={5}
-                size={24}
-                value={reviewmap.overall}
-                edit={false}
-                activeColor="#ff0000"
-              />
-              <img className="picture-user" src={reviewmap.User.profileImg}></img>
-            </NavLink>
-            <div className="review-comment">"{reviewmap.review}"</div>
-          </div>
-        );
-      });
+  const reviewcomp = reviewData.map((reviewmap) => {
+    return (
+      <div className="reviewbox" key={reviewmap.id}>
+        <NavLink to={`/users/${reviewmap.userId}`}>
+          <ReactStars
+            count={5}
+            size={24}
+            value={reviewmap.overall}
+            edit={false}
+            activeColor="#ff0000"
+          />
+          <img className="picture-user" src={reviewmap.User.profileImg}></img>
+        </NavLink>
+        <div className="review-comment">"{reviewmap.review}"</div>
+      </div>
+    );
+  });
 
   return (
     <div className="outer-single-div">

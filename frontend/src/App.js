@@ -12,7 +12,7 @@ import LoginFormModal from "./components/LoginFormModal";
 import SignUpModal from "./components/LoginFormModal";
 import SearchResults from "./components/SearchBar/SearchResults";
 import UserProfile from "./components/UserProfile/UserProfile"
-
+import ThankYouMessage from "./components/ThankYouMessage/ThankYouMessage"
 
 function App() {
   const dispatch = useDispatch();
@@ -53,6 +53,9 @@ function App() {
           <Route path="/signup">
             <SignUpModal />
           </Route>
+          <Route path="/thankyou">
+        <ThankYouMessage/> 
+         </Route>
         </Switch>
       )}
     </>

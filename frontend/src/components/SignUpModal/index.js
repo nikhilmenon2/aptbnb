@@ -1,5 +1,5 @@
 // frontend/src/components/SignUpModal/index.js
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Modal } from '../../context/Modal';
 import SignUp from './SignUp';
 
