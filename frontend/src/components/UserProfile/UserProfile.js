@@ -17,11 +17,24 @@ function User() {
         })();
       }, [userId]);
 
- 
- 
-// const userp = useSelector((state) => state.session.user);
-
  console.log(user)
+ const array = user.Bookings
+ console.log(array)
+  
+ if (!array) {
+   return null;
+ }
+ const bookinginfo = array.map((i) => {
+    return (
+      <div>
+        <div>Booking Number {i.id} </div>
+        <br></br>
+
+        <br></br>
+      </div>
+    );
+  });
+
 
   return (
     <>

@@ -6,6 +6,8 @@ import SearchMap from "../MapContainer/SearchMap";
 import SearchBar from "./SearchBar";
 import { useHistory } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import Footer from "../Footer";
+
 import "./search.css"
 function SearchResults() {
   const location = useLocation();

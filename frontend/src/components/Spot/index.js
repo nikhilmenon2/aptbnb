@@ -5,6 +5,7 @@ import "./Spot.css";
 import Booking from "../Booking/Booking";
 import Review from "../Review/Review";
 import ReactStars from "react-stars";
+import Footer from "../Footer";
 
 
 export default function Spot() {
@@ -120,6 +121,7 @@ export default function Spot() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
