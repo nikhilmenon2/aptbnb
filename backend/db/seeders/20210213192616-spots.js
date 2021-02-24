@@ -29,7 +29,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,Self Check-In,Lockbox",
           price: 200,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "quiet apartment with view & garden",
@@ -55,7 +55,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Wireless Internet,Kitchen,Free parking on premises,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 110,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Industrial Loft in Potrero Hill",
@@ -80,7 +80,7 @@ module.exports = {
           amenity:
             "TV,Wireless Internet,Kitchen,Pets live on this property,Cat(s),Elevator in building,Buzzer/wireless intercom,Heating,Washer,Dryer,Smoke detector,First aid kit,Essentials,Hair dryer,Self Check-In,Keypad,Lockbox",
           price: 200,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Private suite, hot tub, and garden",
@@ -106,7 +106,7 @@ module.exports = {
           amenity:
             "Wireless Internet,Free parking on premises,Hot tub,Heating,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50,Self Check-In,Keypad",
           price: 118,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Modern minimalist apartment in the Mission",
@@ -130,7 +130,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Air conditioning,Pool,Kitchen,Elevator in building,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,Essentials,Shampoo,Hangers,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50,Self Check-In,Lockbox",
           price: 200,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Stylish Nob Hill;  Mid Century Modern; Parking",
@@ -156,7 +156,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Free parking on premises,Elevator in building,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 140,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Beautiful 1 bdrm across GG Park",
@@ -182,7 +182,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Buzzer/wireless intercom,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50",
           price: 250,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Haight Owner-Designer Apt w/Parking",
@@ -207,7 +207,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Free parking on premises,Pets allowed,Indoor fireplace,Buzzer/wireless intercom,Heating,Family/kid friendly,Suitable for events,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,Self Check-In,Keypad",
           price: 295,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Sunny Dogpatch Loft with Bay View",
@@ -233,7 +233,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Pets live on this property,Dog(s),Elevator in building,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 200,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Bright Spacious Clean Loft Dogpatch",
@@ -259,7 +259,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Air conditioning,Kitchen,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,Safety card,Essentials,Shampoo,Hangers,Hair dryer,Laptop friendly workspace,translation missing: en.hosting_amenity_50",
           price: 125,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Beautiful Bernal Heights Apartment",
@@ -285,7 +285,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 120,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Private Entrance Garden Studio",
@@ -312,7 +312,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Indoor fireplace,Heating,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50,Self Check-In,Lockbox",
           price: 129,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Live like a native",
@@ -338,7 +338,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo",
           price: 200,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Adorable Pacific Heights 1 Bedroom",
@@ -364,7 +364,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Heating,Smoke detector,Carbon monoxide detector,Essentials,Shampoo",
           price: 195,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "The Speakeasy on Market Street",
@@ -390,7 +390,7 @@ module.exports = {
           amenity:
             "Wireless Internet,Free parking on premises,Heating,Smoke detector,Carbon monoxide detector,Essentials,Shampoo,Hangers,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50,Private entrance",
           price: 200,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Cute Apartment in Heart of Mission",
@@ -416,7 +416,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Gym,Elevator in building,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Fire extinguisher,Essentials,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 500,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Sande's Place: Private in-law unit",
@@ -442,7 +442,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Smoking allowed,Pets live on this property,Dog(s),Cat(s),Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Iron,Laptop friendly workspace",
           price: 89,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Dolores Park /Noe Valley View Apt.",
@@ -468,7 +468,7 @@ module.exports = {
           amenity:
             "TV,Wireless Internet,Kitchen,Heating,Smoke detector,Essentials,Shampoo",
           price: 250,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Cozy and quiet 1 BD in NoPa",
@@ -495,7 +495,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Heating,Smoke detector,Carbon monoxide detector,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 185,
-          user_id: 2,
+          userId: 2,
         },
         {
           name: "Private apartment with city views",
@@ -521,7 +521,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Pets allowed,Buzzer/wireless intercom,Heating,Smoke detector,Carbon monoxide detector,Fire extinguisher,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 175,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "Top Floor Victorian Flat w/ Parking",
@@ -547,7 +547,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Free parking on premises,Pets live on this property,Dog(s),Buzzer/wireless intercom,Heating,Washer,Dryer,Smoke detector,Fire extinguisher,Essentials",
           price: 250,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "1 BD Apartment blocks from Golden Gate Park",
@@ -573,7 +573,7 @@ module.exports = {
           amenity:
             "TV,Wireless Internet,Kitchen,Free parking on premises,Breakfast,Heating,Washer,Dryer,Smoke detector,First aid kit,Essentials,Shampoo,Lock on bedroom door,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 150,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "A great 1 bedroom apartment in San Francsco.",
@@ -598,7 +598,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Essentials,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 189,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "Private Bernal Heights In-Law Unit",
@@ -624,7 +624,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Family/kid friendly,Smoke detector,Carbon monoxide detector,Fire extinguisher,Essentials,Shampoo",
           price: 110,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "Spacious, Classic North Beach Suite",
@@ -650,7 +650,7 @@ module.exports = {
           amenity:
             "Wireless Internet,Kitchen,Heating,Smoke detector,First aid kit,Fire extinguisher,Essentials,Shampoo,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 185,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "Sweet Spot in Russian/Nob Hill",
@@ -676,7 +676,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Pets allowed,Heating,Smoke detector,Carbon monoxide detector,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 175,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "Sunny bedroom in Bernal Heights flat",
@@ -702,7 +702,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Hangers,Iron,Laptop friendly workspace",
           price: 87,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "Castro Garden Getaway",
@@ -728,7 +728,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Air conditioning,Kitchen,Smoking allowed,Pets allowed,Heating,Smoke detector,Carbon monoxide detector,Essentials,Shampoo,Hangers,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 207,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "Pac Heights dream flat w/ bay views",
@@ -754,7 +754,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Indoor fireplace,Buzzer/wireless intercom,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Essentials,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 220,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "Golden Gate Park Retreat",
@@ -780,7 +780,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Pets live on this property,Dog(s),Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,Fire extinguisher,Essentials,Shampoo,Lock on bedroom door,Hangers,Hair dryer,Iron,Laptop friendly workspace,Private entrance",
           price: 135,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "Stylish, private 3 room suite",
@@ -806,7 +806,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Wireless Internet,Kitchen,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Essentials,Shampoo,Hangers,Hair dryer,Iron",
           price: 115,
-          user_id: 3,
+          userId: 3,
         },
         {
           name: "Simple Hayes Valley Suite",
@@ -832,7 +832,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Pets live on this property,Dog(s),Heating,Smoke detector,Carbon monoxide detector,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,Private entrance",
           price: 150,
-          user_id: 4,
+          userId: 4,
         },
         {
           name: "Suite Retreat Plus Near SFO Sleep 4",
@@ -858,7 +858,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50,Self Check-In,Smartlock",
           price: 125,
-          user_id: 4,
+          userId: 4,
         },
         {
           name: "Garden Studio Oasis in NOPA",
@@ -885,7 +885,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50,Self Check-In,Keypad",
           price: 199,
-          user_id: 4,
+          userId: 4,
         },
         {
           name: "Modern & Luxorious Pacific Heights Apartment",
@@ -911,7 +911,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50,Self Check-In,Keypad,Private entrance",
           price: 191,
-          user_id: 4,
+          userId: 4,
         },
         {
           name: "Cheerful Private Garden Studio",
@@ -938,7 +938,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Pets live on this property,Dog(s),Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 130,
-          user_id: 4,
+          userId: 4,
         },
         {
           name: "Breathtaking City Views!",
@@ -964,7 +964,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Gym,Pets live on this property,Dog(s),Cat(s),Elevator in building,Family/kid friendly,Washer,Dryer,Smoke detector,Essentials,Shampoo,Hangers,Hair dryer,Laptop friendly workspace",
           price: 350,
-          user_id: 4,
+          userId: 4,
         },
         {
           name: "Cute 1 bedroom in the Mission",
@@ -990,7 +990,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hair dryer,Iron",
           price: 150,
-          user_id: 4,
+          userId: 4,
         },
         {
           name: "1 BR Euro-Style, 5* Location @ Potrero Hill",
@@ -1016,7 +1016,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Indoor fireplace,Heating,Family/kid friendly,Dryer,Smoke detector,Carbon monoxide detector,Fire extinguisher,Essentials,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace,Private entrance",
           price: 199,
-          user_id: 4,
+          userId: 4,
         },
         {
           name: "Beautiful Garden Apt. Near Golden Gate Park",
@@ -1042,7 +1042,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 175,
-          user_id: 4,
+          userId: 4,
         },
         {
           name: "Quaint Garden Apt @Golden Gate Park",
@@ -1068,7 +1068,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Wheelchair accessible,Kitchen,Free parking on premises,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50,Self Check-In,Lockbox",
           price: 375,
-          user_id: 4,
+          userId: 4,
         },
         {
           name: "San Francisco Flat in Hayes Valley",
@@ -1094,7 +1094,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50,Self Check-In,Lockbox",
           price: 150,
-          user_id: 4,
+          userId: 4,
         },
         {
           name: "Comfy Flat by Beach & Golden Gate",
@@ -1120,7 +1120,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Air conditioning,Kitchen,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,Self Check-In,Lockbox",
           price: 199,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Perfect West Portal Private Suite!",
@@ -1146,7 +1146,7 @@ module.exports = {
           amenity:
             "Cable TV,Wireless Internet,Free parking on premises,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 130,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Private Suite @ UCSF / Inner Sunset",
@@ -1172,7 +1172,7 @@ module.exports = {
           amenity:
             "Wireless Internet,Kitchen,Heating,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,Self Check-In,Keypad",
           price: 129,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Mid Century Modern Oasis in Fantastic location!",
@@ -1198,7 +1198,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50",
           price: 189,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Sunny, private Hayes Valley oasis",
@@ -1225,7 +1225,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Heating,Washer,Dryer,Smoke detector,Essentials",
           price: 190,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Great 1BD w/ Private Roof Deck",
@@ -1250,7 +1250,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Wireless Internet,Kitchen,Buzzer/wireless intercom,Heating,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 300,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Gorgeous Hayes Valley Victorian",
@@ -1276,7 +1276,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Buzzer/wireless intercom,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Essentials,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 160,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Private Studio in Mission",
@@ -1302,7 +1302,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50",
           price: 125,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Lovely private garden apt.",
@@ -1328,7 +1328,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Pets live on this property,Cat(s),Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector",
           price: 130,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Boho Luxe View Flat, Free Parking!",
@@ -1354,7 +1354,7 @@ module.exports = {
           amenity:
             "TV,Wireless Internet,Kitchen,Free parking on premises,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,Self Check-In,Keypad",
           price: 240,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Historic Noe Valley Raff Cottage",
@@ -1379,7 +1379,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Heating,First aid kit,Essentials,Shampoo,Hair dryer,Iron",
           price: 189,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Sunny Apartment in Pacific Heights",
@@ -1405,7 +1405,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Breakfast,Elevator in building,Buzzer/wireless intercom,Washer,Dryer,Smoke detector,Essentials",
           price: 115,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Beautiful garden studio near Park- Near Mission",
@@ -1431,7 +1431,7 @@ module.exports = {
           amenity:
             "Wireless Internet,Kitchen,Heating,Carbon monoxide detector,Fire extinguisher,Essentials,Shampoo",
           price: 135,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Smart 1 Bedroom with City Views",
@@ -1456,7 +1456,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Wireless Internet,Kitchen,Pets allowed,Pets live on this property,Dog(s),Buzzer/wireless intercom,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo",
           price: 169,
-          user_id: 5,
+          userId: 5,
         },
         {
           name: "Complete Split Level Loft-Live SoMA",
@@ -1481,7 +1481,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Wheelchair accessible,Kitchen,Elevator in building,Buzzer/wireless intercom,Heating,Washer,Dryer,Smoke detector,Essentials",
           price: 390,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Fantastic SF Marina View Apt !",
@@ -1505,7 +1505,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Free parking on premises,Heating,Washer,Dryer,Smoke detector,Essentials,Shampoo,Hangers,Hair dryer,Laptop friendly workspace",
           price: 238,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "spacious 1BR off polk street!",
@@ -1531,7 +1531,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Gym,Buzzer/wireless intercom,Washer,Dryer,Smoke detector,First aid kit,Essentials,Shampoo,24-hour check-in,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 180,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Modern 1BR in Charming Bernal Heights",
@@ -1557,7 +1557,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Indoor fireplace,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,Fire extinguisher,Essentials,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 93,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Awesome & Large 1bd/1ba in San Francisco",
@@ -1582,7 +1582,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Indoor fireplace,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,Essentials,24-hour check-in,Hangers,Hair dryer,Laptop friendly workspace",
           price: 200,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Lovely 1br next to Ocean & lake",
@@ -1608,7 +1608,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Wheelchair accessible,Pool,Kitchen,Free parking on premises,Gym,Elevator in building,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Essentials,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50",
           price: 150,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Charming Apt in Heart of Mission",
@@ -1634,7 +1634,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Pets allowed,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,Fire extinguisher,Essentials,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 200,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Hayes Valley Spacious Flat (1 BR+) With Parking",
@@ -1659,7 +1659,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Free parking on premises,Indoor fireplace,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,Self Check-In,Keypad",
           price: 252,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Spacious 1 bdr in Bernal/Glen park",
@@ -1684,7 +1684,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Pets live on this property,Dog(s),Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,Fire extinguisher,Essentials,24-hour check-in,Laptop friendly workspace",
           price: 499,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Dolores Park and SF at your feet!",
@@ -1710,7 +1710,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Pets allowed,Buzzer/wireless intercom,Heating,Washer,Dryer,Smoke detector,Fire extinguisher,Essentials",
           price: 150,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Castro St Location Location Location",
@@ -1736,7 +1736,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Buzzer/wireless intercom,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50,Self Check-In,Lockbox,Private entrance",
           price: 195,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Serene 1 bedroom garden apartment",
@@ -1762,7 +1762,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Wireless Internet,Kitchen,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,Hangers,Hair dryer,Iron,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 250,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Beautiful North Beach Apt w/balcony",
@@ -1788,7 +1788,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Hot tub,Indoor fireplace,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 250,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Gorgeous mid century gem.",
@@ -1814,7 +1814,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Pets allowed,Pets live on this property,Dog(s),Indoor fireplace,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 150,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Fabulous, fabulous flat...",
@@ -1841,7 +1841,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Pets allowed,Pets live on this property,Dog(s),Buzzer/wireless intercom,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50",
           price: 175,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Sunny Top Floor Mission Apartment",
@@ -1867,7 +1867,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Family/kid friendly,Washer,translation missing: en.hosting_amenity_50",
           price: 195,
-          user_id: 6,
+          userId: 6,
         },
         {
           name: "Sunny Modern Mission Dolores Condo",
@@ -1893,7 +1893,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Pets live on this property,Dog(s),Heating,Washer,Dryer,Smoke detector,Safety card,Fire extinguisher,Essentials,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 215,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "West Portal Garden Unit",
@@ -1919,7 +1919,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Free parking on premises,Breakfast,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50",
           price: 183,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Huge Penthouse -Amazing Place !",
@@ -1945,7 +1945,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Smoking allowed,Pets allowed,Elevator in building,Indoor fireplace,Buzzer/wireless intercom,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo",
           price: 259,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Mission Valencia Design Gem",
@@ -1971,7 +1971,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Buzzer/wireless intercom,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 250,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Stylish One Bedroom SOMA apartment",
@@ -1997,7 +1997,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Breakfast,Buzzer/wireless intercom,Heating,Washer,Dryer,Smoke detector,Fire extinguisher,Essentials,Shampoo,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 160,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Beautiful Artist's One Bedroom",
@@ -2023,7 +2023,7 @@ module.exports = {
           amenity:
             "Wireless Internet,Kitchen,Heating,Smoke detector,Fire extinguisher,Essentials,24-hour check-in,Laptop friendly workspace",
           price: 89,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Beautiful beach front 1 bedroom apartment",
@@ -2049,7 +2049,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Pets allowed,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,Essentials,Shampoo,Lock on bedroom door,Hangers,Laptop friendly workspace,Self Check-In,Smartlock",
           price: 209,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Stunning Upscale Private Apartment",
@@ -2075,7 +2075,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Pets allowed,Indoor fireplace,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,Self Check-In,Keypad",
           price: 160,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Cozy upper unit with great views",
@@ -2100,7 +2100,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Wireless Internet,Free parking on premises,Indoor fireplace,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector",
           price: 700,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Spacious 1BD Hidden Garden Apt",
@@ -2126,7 +2126,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Hot tub,Heating,Family/kid friendly,Washer,Dryer,First aid kit,Fire extinguisher,Essentials,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 155,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Private Cozy Studio Flat  4U!",
@@ -2152,7 +2152,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Wireless Internet,Kitchen,Free parking on premises,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,Lock on bedroom door,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_50,Self Check-In,Keypad",
           price: 140,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Charming spacious Noe Valley Apt",
@@ -2178,7 +2178,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 269,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Live Like a Local 1 Bedroom Flat",
@@ -2204,7 +2204,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,Self Check-In,Lockbox",
           price: 108,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "1-bd Apt Downtown San Francisco",
@@ -2229,7 +2229,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Wireless Internet,Air conditioning,Gym,Elevator in building,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials",
           price: 215,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "1BD in the Heart of San Francisco",
@@ -2255,7 +2255,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Pets allowed,Family/kid friendly,Washer,Dryer,Smoke detector,First aid kit,Essentials,Shampoo,Hangers,Hair dryer,Iron,translation missing: en.hosting_amenity_50",
           price: 175,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Your SF Home with Deck Near Parks",
@@ -2281,7 +2281,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Kitchen,Dog(s),Heating,Washer,Dryer,Smoke detector,First aid kit,Fire extinguisher,Essentials,Hangers,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 195,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Cozy and Quiet apartment close to Presidio Park",
@@ -2307,7 +2307,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Buzzer/wireless intercom,Heating,Washer,Dryer,Essentials,Shampoo,Hangers,Hair dryer,Iron,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 125,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Music lover's dream loft w/ roof!",
@@ -2333,7 +2333,7 @@ module.exports = {
           amenity:
             "Internet,Wireless Internet,Wheelchair accessible,Kitchen,Gym,Elevator in building,Buzzer/wireless intercom,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50,Self Check-In,Keypad",
           price: 239,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Spacious 1bd Pac Heights with Views, Luxury Bed",
@@ -2359,7 +2359,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Pets allowed,Pets live on this property,Dog(s),Elevator in building,Buzzer/wireless intercom,Heating,Family/kid friendly,Washer,Dryer,Smoke detector,First aid kit,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,Private entrance",
           price: 140,
-          user_id: 7,
+          userId: 7,
         },
         {
           name: "Charming with Incredible View",
@@ -2385,7 +2385,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Indoor fireplace,Buzzer/wireless intercom,Heating,Washer,Dryer,Smoke detector,First aid kit,Fire extinguisher,Essentials,Shampoo,Hangers,Iron",
           price: 300,
-          user_id: 8,
+          userId: 8,
         },
         {
           name: "Cozy 1BR Near Cafes, Shops, Bars!",
@@ -2411,7 +2411,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 166,
-          user_id: 8,
+          userId: 8,
         },
         {
           name: "Sunny Bernal Hts flat with views",
@@ -2437,7 +2437,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Pets allowed,Heating,Washer,Dryer,Shampoo,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 200,
-          user_id: 8,
+          userId: 8,
         },
         {
           name: "Sunny Garden Apartment Near Beach and Zoo",
@@ -2463,7 +2463,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Pets live on this property,Cat(s),Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,24-hour check-in,Hangers,Hair dryer,Laptop friendly workspace,Private entrance",
           price: 125,
-          user_id: 8,
+          userId: 8,
         },
         {
           name: "Stunning View Home Above SF!",
@@ -2489,7 +2489,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Free parking on premises,Hot tub,Indoor fireplace,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Safety card,Fire extinguisher,Essentials,Shampoo,Hangers,Hair dryer,Iron,Laptop friendly workspace",
           price: 229,
-          user_id: 8,
+          userId: 8,
         },
         {
           name: "Luxury Living in the Heart of San Francisco",
@@ -2514,7 +2514,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Wireless Internet,Kitchen,Gym,Elevator in building,Hot tub,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo,Lock on bedroom door,24-hour check-in,Hangers,Hair dryer,Iron,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 190,
-          user_id: 8,
+          userId: 8,
         },
         {
           name: "Sunset  Retreat in San Francisco,CA",
@@ -2539,7 +2539,7 @@ module.exports = {
           amenity:
             "TV,Cable TV,Internet,Kitchen,Free parking on premises,Indoor fireplace,Heating,Washer,Dryer,Smoke detector,Carbon monoxide detector,Fire extinguisher,Shampoo,Hangers,Hair dryer,Laptop friendly workspace,translation missing: en.hosting_amenity_49,translation missing: en.hosting_amenity_50",
           price: 128,
-          user_id: 8,
+          userId: 8,
         },
         {
           name: "Beautiful Pac Heights View Apt Mansion District",
@@ -2565,7 +2565,7 @@ module.exports = {
           amenity:
             "TV,Internet,Wireless Internet,Kitchen,Indoor fireplace,Heating,Family/kid friendly,Smoke detector,Carbon monoxide detector,First aid kit,Fire extinguisher,Essentials,Shampoo",
           price: 295,
-          user_id: 8,
+          userId: 8,
         },
       ],
       {}

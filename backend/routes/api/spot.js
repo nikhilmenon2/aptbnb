@@ -22,10 +22,9 @@ router.get(
 
 router.post(
   "/create",
-  asyncHandler(async (req, res, next) => {
-    const { id } = req.params;
-    const spot = await spot.create({});
-    return res.json({ spot });
+  asyncHandler(async (req, res) => {
+    const spot = await Spot.create({});
+    res.json(spot);
   })
 );
 

@@ -10,9 +10,6 @@ function User() {
       const { userId } = useParams();
 
       useEffect(() => {
-        if (!userId) {
-          return;
-        }
         (async () => {
           const response = await fetch(`/api/users/${userId}`);
           const user = await response.json();
@@ -22,7 +19,7 @@ function User() {
 
  
  
-const userp = useSelector((state) => state.session.user);
+// const userp = useSelector((state) => state.session.user);
 
  console.log(user)
 
@@ -31,11 +28,11 @@ const userp = useSelector((state) => state.session.user);
       <div id="profileparent">
         <div id="user-profile-container">
           <div id="img-box">
-            <img className="profile-img" src={userp.profileImg} />
+            <img className="profile-img" src={user.profileImg} />
           </div>
           <div id="user-info-box">
             <div id="user-info-text">
-              <h3>{`${userp.firstName} ${userp.lastName}`}</h3>
+              <h3>{`${user.firstName} ${user.lastName}`}</h3>
             </div>
           </div>
         </div>

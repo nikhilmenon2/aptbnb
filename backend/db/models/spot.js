@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       state: DataTypes.STRING,
       zipcode: DataTypes.INTEGER,
       price: DataTypes.NUMERIC,
-      user_id: DataTypes.INTEGER,
+      userId: DataTypes.INTEGER,
       amenity: DataTypes.STRING,
       bedroom: DataTypes.INTEGER,
       bathroom: DataTypes.INTEGER,
@@ -26,11 +26,11 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   Spot.associate = function (models) {
-    Spot.hasMany(models.Booking, { foreignKey: "spot_id" });
-    Spot.belongsTo(models.User, { foreignKey: "user_id" });
-    Spot.hasMany(models.Image, { foreignKey: "spot_id" });
-    Spot.hasMany(models.Review, { foreignKey: "spot_id" });
-    Spot.hasMany(models.Favorite, { foreignKey: "spot_id" });
+    Spot.hasMany(models.Booking, { foreignKey: "spotId" });
+    Spot.belongsTo(models.User, { foreignKey: "userId" });
+    Spot.hasMany(models.Image, { foreignKey: "spotId" });
+    Spot.hasMany(models.Review, { foreignKey: "spotId" });
+    Spot.hasMany(models.Favorite, { foreignKey: "spotId" });
   };
   return Spot;
 };

@@ -47,7 +47,7 @@ module.exports = {
       price: {
         type: Sequelize.NUMERIC,
       },
-      user_id: {
+      userId: {
         type: Sequelize.INTEGER,
         references: { model: "Users" },
       },

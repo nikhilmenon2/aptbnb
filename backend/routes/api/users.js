@@ -54,7 +54,7 @@ router.get(
   asyncHandler(async (req, res) => {
     const id = Number(req.params.id);
     const user = await User.findByPk(id, {
-    include: [Booking]
+    include: [Booking, Review]
     });
     console.log(user)
 

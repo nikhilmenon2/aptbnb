@@ -3,9 +3,10 @@ import ReactStars from "react-stars";
 import { useDispatch, useSelector } from "react-redux";
 import "./Review.css";
 import { useParams, useHistory } from "react-router-dom";
+import { fetch } from "../../store/csrf";
 
 export default function WriteReview() {
-  let { spotId } = useParams();
+  let { id } = useParams();
   const user = useSelector((state) => state.session.user);
   const dispatch = useDispatch();
   let reviewId;
@@ -18,7 +19,7 @@ export default function WriteReview() {
   const postReview = (e) => {
     e.preventDefault();
       const postReviewHere = async () => {
-        await fetch(`/api/users/${user.id}/reviews/spots/${spotId}`, {
+        await fetch(`/api/reviews/${id}/${user.id}`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -27,7 +28,7 @@ export default function WriteReview() {
             overall: overall,
             review: review,
             userId: user.id,
-            spotId: spotId,
+            spotId: id,
           }),
         });
       };
@@ -37,7 +38,7 @@ export default function WriteReview() {
   const editReview = (e) => {
     e.preventDefault();
       const editReviewHere = async () => {
-        await fetch(`/api/users/${user.id}/reviews/${reviewId}`, {
+        await fetch(`/api/reviews/${id}/${user.id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -47,7 +48,7 @@ export default function WriteReview() {
             overall: overall,
             review: review,
             userId: user.id,
-            spotId: spotId,
+            spotId: id,
           }),
         });
       };
@@ -56,7 +57,7 @@ export default function WriteReview() {
 
   const deleteReview = async (e) => {
     e.preventDefault();
-    await fetch(`/api/users/${user.id}/reviews/${reviewId}`, {
+    await fetch(`/api/reviews/${id}/${user.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
