@@ -37,6 +37,9 @@ router.get(
             },
           ],
         },
+        order: [
+          ["id", "ASC"],
+        ],
       });
 
       
