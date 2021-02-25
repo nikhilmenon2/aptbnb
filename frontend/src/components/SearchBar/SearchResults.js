@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import React, { useEffect, useState } from "react";
 import { searchSpots, clearSearchInfo } from "../../store/search";
-import SearchMap from "../MapContainer/SearchMap";
+import SearchMap from "../MapContainer/index";
 import SearchBar from "./SearchBar";
 import { useHistory } from "react-router-dom";
 import { NavLink } from "react-router-dom";

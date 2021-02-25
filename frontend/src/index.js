@@ -1,5 +1,8 @@
 import React from 'react';
+import {
+  LoadScript
 
+} from "@react-google-maps/api";
 import './index.css';
 
 import ReactDOM from 'react-dom';
@@ -28,16 +31,20 @@ if (process.env.NODE_ENV !== "production") {
 //   </div>
 // );
 
+console.log(process.env.REACT_APP_GOOGLE_API_KEY)
+
 function Root() {
   return (
-    <ModalProvider>
-      <Provider store={store}>
-        <BrowserRouter>
-          <App />
-          {/* <Carrot /> */}
-        </BrowserRouter>
-      </Provider>
-    </ModalProvider>
+    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_API_KEY}>
+      <ModalProvider>
+        <Provider store={store}>
+          <BrowserRouter>
+            <App />
+            {/* <Carrot /> */}
+          </BrowserRouter>
+        </Provider>
+      </ModalProvider>
+    </LoadScript>
   );
 }
 

@@ -6,23 +6,22 @@ import Booking from "../Booking/Booking";
 import Review from "../Review/Review";
 import ReactStars from "react-stars";
 import Footer from "../Footer";
+import { fetch } from "../../store/csrf";
+
 
 
 export default function Spot() {
   let { id } = useParams();
   const [review, setReview] = useState({});
-
+  const user = useSelector((state) => state.session.user);
   const numId = parseInt(id);
   const spots = useSelector((state) => state.search.searchResults);
-
-
   let spot = spots.find((x) => x.id === numId);
 
   useEffect(() => {
     (async () => {
       const response = await fetch(`/api/reviews/${id}`);
-      const reviews = await response.json();
-      setReview(reviews);
+      setReview(response.data);
     })();
   }, [id]);
 
@@ -30,25 +29,57 @@ export default function Spot() {
     return review[key];
   });
 
-  console.log(reviewData)
 
-  const reviewcomp = reviewData.map((reviewmap) => {
-    return (
-      <div className="reviewbox" key={reviewmap.id}>
-        <NavLink to={`/users/${reviewmap.userId}`}>
-          <ReactStars
-            count={5}
-            size={24}
-            value={reviewmap.overall}
-            edit={false}
-            activeColor="#ff0000"
-          />
-          <img className="picture-user" src={reviewmap.User.profileImg}></img>
-        </NavLink>
-        <div className="review-comment">"{reviewmap.review}"</div>
-      </div>
-    );
-  });
+if(user){
+    var reviewcomp = reviewData.map((reviewmap) => {
+
+        const deleteReview = async (e) => {
+          e.preventDefault();
+          await fetch(`/api/users/reviews/${reviewmap.id}`, {
+            method: "DELETE",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+        };
+      return (
+        <div className="reviewbox" key={reviewmap.id}>
+          <NavLink to={`/users/${reviewmap.userId}`}>
+            <ReactStars
+              count={5}
+              size={24}
+              value={reviewmap.overall}
+              edit={false}
+              activeColor="#ff0000"
+            />
+            <img className="picture-user" src={reviewmap.User.profileImg}></img>
+          </NavLink>
+          <div className="review-comment">"{reviewmap.review}"</div>
+          {user.id === reviewmap.userId && (<button onClick={deleteReview}>Delete</button>)}
+        </div>
+      );
+    });
+  } else {
+   var reviewcomp = reviewData.map((reviewmap) => {
+      return (
+        <div className="reviewbox" key={reviewmap.id}>
+          <NavLink to={`/users/${reviewmap.userId}`}>
+            <ReactStars
+              count={5}
+              size={24}
+              value={reviewmap.overall}
+              edit={false}
+              activeColor="#ff0000"
+            />
+            <img className="picture-user" src={reviewmap.User.profileImg}></img>
+          </NavLink>
+          <div className="review-comment">"{reviewmap.review}"</div>
+        </div>
+      );
+    });
+
+  }
+    
 
   return (
     <div className="outer-single-div">
@@ -117,11 +148,11 @@ export default function Spot() {
                 <div id="review-parent-div">{reviewcomp}</div>
               </div>
             </div>
-            <Review></Review>
+            {user && (<Review></Review>)}
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

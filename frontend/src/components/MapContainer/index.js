@@ -1,76 +1,64 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   GoogleMap,
-  LoadScript,
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import { useDispatch, useSelector } from "react-redux";
-import"./map.css"
-
-
-
-const MapContainer = () => {
-
-    const mapStyles = {
-      height: "100%",
-      width: "100%",
-    };
-
-    const defaultCenter = {
-      lat: 37.7739,
-      lng: -122.431297,
-    };
-
-
+import "./map.css";
+const SearchMap = ({ center, spots }) => {
   const [selected, setSelected] = useState({});
 
-  const spots = useSelector((state) => state.spots);
+  let mapStyles = {
+    height: "100%",
+    width: "100%",
+  };
 
-  const dispatch = useDispatch();
+  let defaultCenter = { lat: 32.779167, lng: -96.808891 };
 
-  if (!spots){
-    return null;
+  if (center) {
+    defaultCenter = {
+      lat: center.latitude,
+      lng: center.longitude,
+    };
   }
 
-  let myData = Object.keys(spots).map((key) => {
-    return spots[key];
-  });
+  const onSelect = (spot) => {
+    setSelected(spot);
+  };
 
-console.log(myData)
-
- const onSelect = (spot) => {
-   setSelected(spot);
- };
-
-
+  if (!center) {
+    return null;
+  }
   return (
-    <LoadScript googleMapsApiKey="AIzaSyBB_qz7gdLnQ9rBYBbQafFjWqx7gyIIJVI">
-      <GoogleMap
-          mapContainerStyle={mapStyles}
-          zoom={13}
-          center={defaultCenter}>
-        {myData.map((spot) => (
-          <Marker
-            key={spot.id}
-            position={{
-              lat: Number.parseFloat(spot.lat),
-              lng: Number.parseFloat(spot.long),
-            }}
-            onClick={() => onSelect(spot)}
-            label={`${spot.price}`}
-          />
-        ))}
-        <InfoWindow
+      <GoogleMap mapContainerStyle={mapStyles} zoom={12} center={defaultCenter}>
+        {spots &&
+          spots.map((spot, ind) => {
+            return (
+              <Marker
+                position={{ lat: Number(spot.lat), lng: Number(spot.long) }}
+                key={ind}
+                onClick={() => onSelect(spot)}
+                label={`${ind + 1}`}
+                icon={{
+                  fontSize: "9px",
+                  fontWeight: "bold",
+                  color: "white",
+                }}
+              />
+            );
+          })}
+        {/* Decide to keep windows */}
+        {/* <InfoWindow
           position={{
             lat: Number.parseFloat(selected.lat),
             lng: Number.parseFloat(selected.long),
-          }}
-          clickable={true}
+          }} */}
+        {/* // clickable={true}
           onCloseClick={() => setSelected({})}
         >
-            <div className="infowindow">
-              <p>{selected.name}</p>
+          <div className="infowindow"> */}
+        {/* <a href={`/spots/${selected.id}`}> */}
+        {/* <p>{selected.name}</p>
               <img
                 src={selected.imageURL}
                 className="small-image"
@@ -78,12 +66,12 @@ console.log(myData)
               />
               <p>price: {selected.price}</p>
               <p>bathroom: {selected.bathroom}</p>
-              <p>bedrooms: {selected.bedroom}</p>
-            </div>
-        </InfoWindow>
+              <p>bedrooms: {selected.bedroom}</p> */}
+        {/* </a> */}
+        {/* </div>
+        </InfoWindow> */}
       </GoogleMap>
-    </LoadScript>
   );
 };
 
-export default MapContainer;
+export default SearchMap;

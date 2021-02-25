@@ -62,6 +62,18 @@ router.get(
 
   })
 )
+
+router.delete(
+  "/reviews/:id",
+  requireAuth,
+  asyncHandler(async (req, res) => {
+    const id = Number(req.params.id);
+    const user = await Review.destroy({
+      where: { id: id },
+    });
+
+  })
+);
  
 
 

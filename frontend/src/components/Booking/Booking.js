@@ -8,13 +8,14 @@ import Select from "react-select";
 import { useParams, useHistory } from "react-router-dom";
 import { fetch } from "../../store/csrf";
 import "./Booking.css";
-
+import LoginModal from '../Confirmation/Login'
 function Booking() {
   let { id } = useParams();
   const user = useSelector((state) => state.session.user);
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const [people, setPeople] = useState({});
+  const [showModal, setShowModal] = useState(false);
   const history = useHistory();
 
   const selectionRange = {
@@ -47,8 +48,8 @@ function Booking() {
       });
       return <h1>There are no reviews for this business yet!</h1>;
     } else {
-      history.push("/");
-    }
+    setShowModal(true)   
+   }
   };
 
   return (
@@ -64,6 +65,7 @@ function Booking() {
       <button className="nav-link" onClick={makeReservation}>
         Make Booking
       </button>
+      {showModal && <LoginModal setShowModal={setShowModal}/>}
     </div>
   );
 }

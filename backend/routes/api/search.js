@@ -40,6 +40,7 @@ router.get(
         order: [
           ["id", "ASC"],
         ],
+        limit: 10
       });
 
       
