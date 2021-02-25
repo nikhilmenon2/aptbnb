@@ -14,9 +14,7 @@ export default function Spot() {
 
   const numId = parseInt(id);
   const spots = useSelector((state) => state.search.searchResults);
-  const user = useSelector((state) => state.session.user);
-  let userId = user.id;
-  console.log(userId);
+
 
   let spot = spots.find((x) => x.id === numId);
 
@@ -31,6 +29,8 @@ export default function Spot() {
   const reviewData = Object.keys(review).map((key) => {
     return review[key];
   });
+
+  console.log(reviewData)
 
   const reviewcomp = reviewData.map((reviewmap) => {
     return (
