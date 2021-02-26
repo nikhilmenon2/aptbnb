@@ -9,7 +9,7 @@ import { useParams, useHistory } from "react-router-dom";
 import { fetch } from "../../store/csrf";
 import "./Booking.css";
 import LoginModal from '../Confirmation/Login'
-  import { toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 
 
@@ -54,7 +54,8 @@ function Booking() {
       });
       toast.success("Booking Confirmed")
     } else {
-    setShowModal(true)   
+    // setShowModal(true)   
+    toast.error("Hold Up! You Need To Log In Before You Do That!")
    }
   };
 
@@ -74,7 +75,7 @@ function Booking() {
         Make Booking
       </button>
 
-      {showModal && <LoginModal setShowModal={setShowModal} />}
+      {/* {showModal && <LoginModal setShowModal={setShowModal} />} */}
     </div>
   );
 }

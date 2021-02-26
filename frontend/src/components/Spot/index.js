@@ -7,7 +7,7 @@ import Review from "../Review/Review";
 import ReactStars from "react-stars";
 import Footer from "../Footer";
 import { fetch } from "../../store/csrf";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 
 
@@ -30,18 +30,20 @@ export default function Spot() {
     return review[key];
   });
 
-
 if(user){
+
+
     var reviewcomp = reviewData.map((reviewmap) => {
 
-        const deleteReview = async (e) => {
+        const deleteReview = (e) => {
           e.preventDefault();
-          await fetch(`/api/users/reviews/${reviewmap.id}`, {
+          fetch(`/api/users/reviews/${reviewmap.id}`, {
             method: "DELETE",
             headers: {
               "Content-Type": "application/json",
             },
           });
+          toast.success("Review Deleted");
         };
       return (
         <div className="reviewbox" key={reviewmap.id}>
