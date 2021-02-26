@@ -9,6 +9,12 @@ import { useParams, useHistory } from "react-router-dom";
 import { fetch } from "../../store/csrf";
 import "./Booking.css";
 import LoginModal from '../Confirmation/Login'
+  import { toast } from "react-toastify";
+
+
+
+
+
 function Booking() {
   let { id } = useParams();
   const user = useSelector((state) => state.session.user);
@@ -46,11 +52,13 @@ function Booking() {
           spotId: id,
         }),
       });
-      return <h1>There are no reviews for this business yet!</h1>;
+      toast.success("Booking Confirmed")
     } else {
     setShowModal(true)   
    }
   };
+
+
 
   return (
     <div className="search">
@@ -65,7 +73,8 @@ function Booking() {
       <button className="nav-link" onClick={makeReservation}>
         Make Booking
       </button>
-      {showModal && <LoginModal setShowModal={setShowModal}/>}
+
+      {showModal && <LoginModal setShowModal={setShowModal} />}
     </div>
   );
 }

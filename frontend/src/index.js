@@ -14,7 +14,8 @@ import App from './App';
 import configureStore from './store';
 import { restoreCSRF, fetch } from './store/csrf';
 import * as sessionActions from './store/session';
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const store = configureStore();
 
 if (process.env.NODE_ENV !== "production") {
@@ -37,6 +38,7 @@ function Root() {
   return (
     <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_API_KEY}>
       <ModalProvider>
+        <ToastContainer/>
         <Provider store={store}>
           <BrowserRouter>
             <App />
