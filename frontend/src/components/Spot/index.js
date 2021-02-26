@@ -9,8 +9,6 @@ import Footer from "../Footer";
 import { fetch } from "../../store/csrf";
 import { toast } from "react-toastify";
 
-
-
 export default function Spot() {
   let { id } = useParams();
   const [review, setReview] = useState({});
@@ -30,21 +28,18 @@ export default function Spot() {
     return review[key];
   });
 
-if(user){
-
-
+  if (user) {
     var reviewcomp = reviewData.map((reviewmap) => {
-
-        const deleteReview = (e) => {
-          e.preventDefault();
-          fetch(`/api/users/reviews/${reviewmap.id}`, {
-            method: "DELETE",
-            headers: {
-              "Content-Type": "application/json",
-            },
-          });
-          toast.success("Review Deleted");
-        };
+      const deleteReview = (e) => {
+        e.preventDefault();
+        fetch(`/api/users/reviews/${reviewmap.id}`, {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        toast.success("Review Deleted");
+      };
       return (
         <div>
           <div className="reviewbox" key={reviewmap.id}>
@@ -64,13 +59,15 @@ if(user){
             <div className="review-comment">"{reviewmap.review}"</div>
           </div>
           {user.id === reviewmap.userId && (
-            <button id="reviewdelete" onClick={deleteReview}>Delete</button>
+            <button id="reviewdelete" onClick={deleteReview}>
+              Delete
+            </button>
           )}
         </div>
       );
     });
   } else {
-   var reviewcomp = reviewData.map((reviewmap) => {
+    var reviewcomp = reviewData.map((reviewmap) => {
       return (
         <div className="reviewbox" key={reviewmap.id}>
           <NavLink to={`/users/${reviewmap.userId}`}>
@@ -87,9 +84,7 @@ if(user){
         </div>
       );
     });
-
   }
-    
 
   return (
     <div className="outer-single-div">
@@ -158,7 +153,7 @@ if(user){
                 <div id="review-parent-div">{reviewcomp}</div>
               </div>
             </div>
-            {user && (<Review></Review>)}
+            {user && <Review></Review>}
           </div>
         </div>
       </div>

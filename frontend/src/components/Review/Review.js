@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import "./Review.css";
 import { useParams, useHistory } from "react-router-dom";
 import { fetch } from "../../store/csrf";
+import { toast } from "react-toastify";
+
 
 export default function WriteReview() {
   let { id } = useParams();
@@ -12,6 +14,7 @@ export default function WriteReview() {
   let reviewId;
   const [overall, setOverall] = useState("");
   const [review, setReview] = useState("");
+ 
   const setReviewWrapper = (e) => {
     setReview(e.target.value);
   };
@@ -33,37 +36,10 @@ export default function WriteReview() {
         });
       };
       postReviewHere();
+     toast.success("Review Submitted");
+
   };
 
-  const editReview = (e) => {
-    e.preventDefault();
-      const editReviewHere = async () => {
-        await fetch(`/api/reviews/${id}/${user.id}`, {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          allow: "PATCH",
-          body: JSON.stringify({
-            overall: overall,
-            review: review,
-            userId: user.id,
-            spotId: id,
-          }),
-        });
-      };
-      editReviewHere();
-  };
-
-  const deleteReview = async (e) => {
-    e.preventDefault();
-    await fetch(`/api/reviews/${id}/${user.id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-  };
 
 
 
