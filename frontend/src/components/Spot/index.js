@@ -46,19 +46,26 @@ if(user){
           toast.success("Review Deleted");
         };
       return (
-        <div className="reviewbox" key={reviewmap.id}>
-          <NavLink to={`/users/${reviewmap.userId}`}>
-            <ReactStars
-              count={5}
-              size={24}
-              value={reviewmap.overall}
-              edit={false}
-              activeColor="#ff0000"
-            />
-            <img className="picture-user" src={reviewmap.User.profileImg}></img>
-          </NavLink>
-          <div className="review-comment">"{reviewmap.review}"</div>
-          {user.id === reviewmap.userId && (<button onClick={deleteReview}>Delete</button>)}
+        <div>
+          <div className="reviewbox" key={reviewmap.id}>
+            <NavLink to={`/users/${reviewmap.userId}`}>
+              <ReactStars
+                count={5}
+                size={24}
+                value={reviewmap.overall}
+                edit={false}
+                activeColor="#ff0000"
+              />
+              <img
+                className="picture-user"
+                src={reviewmap.User.profileImg}
+              ></img>
+            </NavLink>
+            <div className="review-comment">"{reviewmap.review}"</div>
+          </div>
+          {user.id === reviewmap.userId && (
+            <button id="reviewdelete" onClick={deleteReview}>Delete</button>
+          )}
         </div>
       );
     });

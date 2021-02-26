@@ -153,3 +153,16 @@
     width: 100px;
     border-radius: 60px;
 }
+
+
+#reviewdelete{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ff8b88;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 12px;
+  font-family: 'Times New Roman', Times, serif;
+}
