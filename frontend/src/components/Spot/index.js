@@ -46,7 +46,7 @@ export default function Spot() {
             <NavLink to={`/users/${reviewmap.userId}`}>
               <ReactStars
                 count={5}
-                size={20}
+                size={18}
                 value={reviewmap.overall}
                 edit={false}
                 activeColor="#ff0000"
