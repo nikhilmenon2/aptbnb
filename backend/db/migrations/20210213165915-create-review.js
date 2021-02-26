@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       review: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
       },
       spotId: {
         type: Sequelize.INTEGER,
@@ -23,11 +23,11 @@ module.exports = {
         references: { model: "Users" },
       },
       createdAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE,
       },
       updatedAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE,
       },
     });
