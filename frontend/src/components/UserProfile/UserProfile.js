@@ -3,11 +3,11 @@ import { useParams, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Footer from "../Footer/index";
 import "./UserProfile.css";
+import Moment from "moment";
 
 
 function User() {
     const [user, setUser] = useState({});
-    const [booking, setBooking] = useState({});
   const { userId } = useParams();
       useEffect(() => {
         (async () => {
@@ -17,25 +17,28 @@ function User() {
         })();
       }, [userId]);
 
-        useEffect(() => {
-          (async () => {
-            const response = await fetch(`/api/bookings/${userId}`);
-            const booking = await response.json();
-            setBooking(booking);
-          })();
-        }, [userId]);
+      console.log(user)
+
 
  const array = user.Bookings
-  
+ console.log(array)
+
  if (!array) {
    return null;
  }
+
+ 
  const bookinginfo = array.map((i) => {
+  const startDate = Moment(i.startdate).format("MMM Do YYYY");
+  const endDate = Moment(i.startdate).format("MMM Do YYYY");
+
+
     return (
       <div>
-        <div>Booking Number {i.id} </div>
+        <div>Booking # {i.id} </div>
         <br></br>
-
+        <div>Guest Number: {i.guest_num} </div>
+        <div>{startDate} - {endDate}</div>
         <br></br>
       </div>
     );
@@ -54,6 +57,8 @@ function User() {
               <h3>{`${user.firstName} ${user.lastName}`}</h3>
             </div>
           </div>
+          <h1>Confirmed Bookings</h1>
+          <div id="review-parent-div">{bookinginfo}</div>
         </div>
       </div>
       <Footer />

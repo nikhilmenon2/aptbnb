@@ -56,7 +56,6 @@ router.get(
     const user = await User.findByPk(id, {
     include: [Booking, Review]
     });
-
    res.json(user)
 
   })

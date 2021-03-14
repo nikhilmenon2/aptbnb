@@ -14,16 +14,16 @@ router.post(
   })
 );
 
-router.get(
-  "/:userId/", requireAuth,
-  asyncHandler(async (req, res) => {
-    const id = Number(req.params.userId);
-    const booking = await Booking.findAll({
-      where: { userId: userId }
-    });
-    res.json(booking);
-  })
-);
+// router.get(
+//   "/:userId/", requireAuth,
+//   asyncHandler(async (req, res) => {
+//     const id = Number(req.params.userId);
+//     const booking = await Booking.findAll({
+//       where: { userId: userId }
+//     });
+//     res.json(booking);
+//   })
+// );
 
 
 
