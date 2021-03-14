@@ -29,8 +29,8 @@ function User() {
 
  
  const bookinginfo = array.map((i) => {
-  const startDate = Moment(i.startdate).format("MMM Do YYYY");
-  const endDate = Moment(i.startdate).format("MMM Do YYYY");
+  const startDate = Moment(i.startDate).format("MMM Do YYYY");
+  const endDate = Moment(i.endDate).format("MMM Do YYYY");
 
 
     return (
