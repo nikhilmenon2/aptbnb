@@ -34,7 +34,7 @@ function User() {
 
 
     return (
-      <div>
+      <div className="bookingcard">
         <div>Booking # {i.id} </div>
         <br></br>
         <div>Guest Number: {i.guest_num} </div>
@@ -58,7 +58,7 @@ function User() {
             </div>
           </div>
           <h1>Confirmed Bookings</h1>
-          <div id="review-parent-div">{bookinginfo}</div>
+          <div id="booking-parent">{bookinginfo}</div>
         </div>
       </div>
       <Footer />
