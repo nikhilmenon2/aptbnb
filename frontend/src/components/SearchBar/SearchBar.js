@@ -11,7 +11,6 @@ function SearchBar({ setLoaded, loaded, loc }) {
 
   useEffect(() => {
     let vals = parse(location.search);
-    console.log("vals", vals);
     if (vals.location) setSearchLocation(vals.location);
   }, []);
 

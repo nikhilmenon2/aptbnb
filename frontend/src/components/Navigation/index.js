@@ -46,7 +46,7 @@ function Navigation({ isLoaded }) {
     sessionLinks = (
       <>
         <div className="nav-link" onClick={demoLogin}>
-          Demo
+          Demo Login
         </div>
         <LoginFormModal />
         <SignUpModal />

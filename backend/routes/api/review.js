@@ -27,8 +27,6 @@ router.get(
             include: { model: User
    }})
 
-        console.log(spot);
-
         res.json(spot);
           }))
 

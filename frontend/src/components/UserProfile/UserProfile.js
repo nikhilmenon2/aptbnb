@@ -7,8 +7,8 @@ import "./UserProfile.css";
 
 function User() {
     const [user, setUser] = useState({});
-      const { userId } = useParams();
-
+    const [booking, setBooking] = useState({});
+  const { userId } = useParams();
       useEffect(() => {
         (async () => {
           const response = await fetch(`/api/users/${userId}`);
@@ -17,9 +17,15 @@ function User() {
         })();
       }, [userId]);
 
- console.log(user)
+        useEffect(() => {
+          (async () => {
+            const response = await fetch(`/api/bookings/${userId}`);
+            const booking = await response.json();
+            setBooking(booking);
+          })();
+        }, [userId]);
+
  const array = user.Bookings
- console.log(array)
   
  if (!array) {
    return null;
