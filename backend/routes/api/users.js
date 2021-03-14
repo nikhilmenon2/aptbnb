@@ -4,7 +4,7 @@ const asyncHandler = require('express-async-handler');
 
 const { handleValidationErrors } = require('../../utils/validation');
 const { setTokenCookie, requireAuth } = require('../../utils/auth');
-const { User, Booking, Review } = require('../../db/models');
+const { User, Booking, Spot, Review } = require('../../db/models');
 
 const router = express.Router();
 
@@ -54,7 +54,7 @@ router.get(
   asyncHandler(async (req, res) => {
     const id = Number(req.params.id);
     const user = await User.findByPk(id, {
-    include: [Booking, Review]
+    include: [Booking, Review],
     });
    res.json(user)
 

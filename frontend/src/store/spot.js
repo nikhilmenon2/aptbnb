@@ -9,7 +9,7 @@ export const getSpots = () => async (dispatch) => {
 };
 
 export const spotDisplay = (spotId) => async (dispatch) => {
-  let res = await fetch(`/api/spot/${spotId}`, {
+  let res = await fetch(`/api/spots/${spotId}`, {
     headers: {
       "Content-Type": "application/json",
     },
