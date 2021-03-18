@@ -19,7 +19,7 @@ export const searchSpots = (location) => async (dispatch) => {
   if (location) {
     let loc = await tt.services
       .fuzzySearch({
-        key: "3mbhG7ahGflHQAtjynisAZIEkgWvQzZz",
+        key: "",
         query: location,
       })
       .go();
